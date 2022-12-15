@@ -1,0 +1,47 @@
+#main{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    width: 840px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+#mainbody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+#clientandboat{
+    padding-top: 2rem;
+width: 100%;
+}
+#BoatOptions{
+    width: 50%;
+}
+#BoatOrderForm{
+    padding-left: 2rem;
+}
+#clientandboat  td:first-of-type{
+    width: 40rem;
+}
+table tr{
+    border-bottom: 1px solid blueviolet;
+    height: 3rem;
+}
+table{
+    border-collapse: collapse;
+}
+#tableopt td{
+    width: 40rem;
+}
+#TablePrice tr{
+border-bottom: none;
+width: 50rem;    
+display: block;
+}
+#TablePrice td:first-of-type{
+    width: 40rem;
+}

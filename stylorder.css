@@ -1,5 +1,9 @@
-#main{
+
+body{
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+#main{
     width: 840px;
     margin: auto;
     height: auto;
@@ -32,6 +36,7 @@ table tr{
     height: 3rem;
 }
 table{
+    table-layout: fixed;
     border-collapse: collapse;
 }
 #tableopt td{
@@ -44,4 +49,8 @@ display: block;
 }
 #TablePrice td:first-of-type{
     width: 40rem;
+}
+#printButton{
+    width: 10rem;
+    height: 10rem;
 }

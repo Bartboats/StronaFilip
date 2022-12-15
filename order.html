@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order form</title>
     <link href="stylorder.css" rel="stylesheet">
+    <link href="stylorder.css" rel="stylesheet" media="print">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
      function generatePDF() {
@@ -90,19 +91,83 @@
                     </tr>
                 </table>
             </div>
+            <div id="button" style="width: 10rem;margin: auto; margin-top: 3rem;">
+                <button onclick="printFunction()" id="printButton">Print</button>
+        <script>
+              function printFunction() {
+                document.getElementById('button').style.display = 'none';
+                window.print();
+                document.getElementById('button').style.display = 'block';
+              }
+        </script>
+        
+            </div>
             <div id="BoatOptions">
                 <h2><b>Extended options</b></h2>
                 <div id="Extopt">
                     <table id="tableopt">
 
                     </table>
+
                 </div>
+                
             </div>
         </div>
+        <p>All prices are in euro net. 2022<br>
+            Under control of following organizations<br>
+            Germanischer Lloyd AG – Hamburg<br>
+            Lloyd’s Register Quality Assurance Yacht Service – Hamburg<br>
+            International Marine Certification Institute – Brussels<br>
+            Price list remains valid until 31.03.2023<br>
+            Price netto in EUR / EXW Chojnice<br>
+            I<br>
+            Prices/ Payment<br>
+            VALORY Boats<br>
+            by Boatbuilding Motor Yacht Sp. z o.o. * Gdańska 2, 89-620 Chojnice *<br>
+            e-mail :<br>
+            sales@boatbuilding.com.pl<br>
+            1.<br>
+            The prices in trade are net prices, to which VAT is added each time at the<br>
+            applicable<br>
+            rate. The price calculation includes only the release of the goods at the premises<br>
+            of<br>
+            Boatbuilding Motor Yacht. The prices do not include shipping and transport costs<br>
+            (unless the calculation provides otherwise) and insurance of the goods. The price<br>
+            is<br>
+            calculated and the payment is made in Polish zlotys or their equivalent expressed<br>
+            in a<br>
+            foreign currency. Additional costs resulting from payment in a foreign currency are<br>
+            borne by the Customer.<br>
+            2.<br>
+            Due to technological reasons, Boatbuilding Motor Yacht allows for deviations of<br>
+            the<br>
+            quantity realized in relation to the quantity ordered by 10%.<br>
+            3.<br>
+            The prices indicated in the offer are valid for a maximum period of one month<br>
+            from<br>
+            the date of delivery of the offer to the Customer, provided that the data on which<br>
+            the<br>
+            price is based remains unchanged.<br>
+            4.<br>
+            The circumstances beyond the control of Boatbuilding Motor Yacht, which will<br>
+            occur<br>
+            after the order has been placed and which will have a significant, unforeseeable<br>
+            impact on the basis of the price calculation, authorize Boatbuilding Motor Yacht to<br>
+            increase the agreed prices, but only up to the amount that will be justified by the<br>
+            occurrence of the above-mentioned circumstances.The above applies in<br>
+            particular to<br>
+            statutory changes, official orders, the amount of the euro exchange rate, etc. The<br>
+            prices thus increased will be determined on the same basis as the prices<br>
+            originally<br>
+            www.valory.pl<br>
+            agreed and will not be intended to increase profits.<br>
+            5.<br>
+            The buyer undertakes to read and accept the following general terms and<br>
+            conditions<br>
+            of commercial cooperation of Boatbuilding Motor Yacht Sp z o. o.<br>
+            https://valory.pl/assets/Documents/GENERAL-TERMS-AND-CONDITIONS-OF-<br>
+            COMMERCIAL-COOPERATION.pdf</p>
     </div>
-    </div>
-    <div id="button" style="width: 10rem;margin: auto; margin-top: 3rem;">
-        <a href="https://pdf-ace.com/pdfme/" target= "_blank">Save as PDF</a>
     </div>
     </div>
     <script>

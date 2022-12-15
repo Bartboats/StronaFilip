@@ -247,7 +247,7 @@
 
             let person = prompt("Please enter dealership name", "");
             localStorage.setItem("CompanyName", person);
-         window.open("order.html"); 
+        location.href='order.php';
     }
     </script>
 <div id="main">
@@ -382,7 +382,7 @@
                 <h2>Exclusive</h2>
                 <span class="equprice">+ &euro;620,00</span>
             <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input type="radio" id="fesport" name="flexi" onclick="Order()"></div></li>
+                <li><div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input type="radio" id="fesport" name="flexi" value="Bow + cockpit Light Grey" onclick="Order()"></div></li>
             </ul>
         </div>
         <div class="equipment">

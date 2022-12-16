@@ -52,5 +52,6 @@ display: block;
 }
 #printButton{
     width: 10rem;
-    height: 10rem;
+    height: 5rem;
+    font-size: medium;
 }

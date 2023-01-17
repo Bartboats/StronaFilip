@@ -46,8 +46,8 @@
             if(document.getElementById('dinv').checked==1){
                 value = value + 250;
             }
-            if(document.getElementById('fpdarkgrey').checked == 1 && document.getElementById('fpgrey').checked == 1 && document.getElementById('fpbrown').checked == 1  && document.getElementById('fplightgrey').checked == 1  && document.getElementById('fpbeige').checked == 1 ){
-                    value = value + 6250;
+            if(document.getElementById('fpdarkgrey').checked == 1 || document.getElementById('fpgrey').checked == 1 || document.getElementById('fpbrown').checked == 1  || document.getElementById('fplightgrey').checked == 1  || document.getElementById('fpbeige').checked == 1 ){
+                    value = value + 625;
             }
             if(document.getElementById('cpblack').checked==1){
                 value = value + 1000;
@@ -347,7 +347,7 @@
         <div class="equipment">
             <h1>Flexi Teak</h1>
             <h2>Bow + cockpit</h2>
-            <span class="equprice">+ &euro;6250,00</span>
+            <span class="equprice">+ &euro;625,00</span>
             <ul>
                 <li><div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input value="Bow + cockpit Dark Grey" type="radio" id="fpdarkgrey" name="flexi" onclick="Order()"></div></li>
                 <li><div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio" value="Bow + cockpit Grey" id="fpgrey" name="flexi" onclick="Order()"></div></li>

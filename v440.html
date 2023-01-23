@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
-    <title>Boat order form V555</title>
+    <title>Boat order form V440</title>
 </head>
 <body onload = "refresh()" >
     <script>
@@ -47,7 +47,7 @@
                 value = value + 250;
             }
             if(document.getElementById('fpdarkgrey').checked == 1 || document.getElementById('fpgrey').checked == 1 || document.getElementById('fpbrown').checked == 1  || document.getElementById('fplightgrey').checked == 1  || document.getElementById('fpbeige').checked == 1 ){
-                    value = value + 625;
+                    value = value + 520;
             }
             if(document.getElementById('cpblack').checked==1){
                 value = value + 1100;
@@ -110,7 +110,7 @@
     }
     function session(){
 
-            localStorage.setItem("model", "Valory 520");
+            localStorage.setItem("model", "Valory 440");
             localStorage.setItem("Ropecolor", "(no available in this model)");
             localStorage.setItem("Baseprice", "4100");
             
@@ -347,8 +347,8 @@
         </div>
         <div class="equipment">
             <h1>Flexi Teak</h1>
-            <h2>Bow + cockpit</h2>
-            <span class="equprice">+ &euro;625,00</span>
+            <h2>Floor</h2>
+            <span class="equprice">+ &euro;520,00</span>
             <ul>
                 <li><div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input value="Bow + cockpit Dark Grey" type="radio" id="fpdarkgrey" name="flexi" onclick="Order()"></div></li>
                 <li><div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio" value="Bow + cockpit Grey" id="fpgrey" name="flexi" onclick="Order()"></div></li>

@@ -1,4 +1,4 @@
-#main{
+#main {
     font-weight: bold;
     height: 98%;
     width: 99%;
@@ -7,131 +7,161 @@
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
-#left{
+
+#left {
     width: 50%;
     height: 100%;
     background-color: #fffffff5;
 }
-#right{
+
+#right {
     flex-direction: column;
     display: flex;
     width: 50%;
     height: 100%;
     background-color: #e9e9e9;
 }
-#logo{
+
+#logo {
     display: flex;
     height: 15%;
     background-color: #fffffff5;
 }
-#logoValory{
+
+#logoValory {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-#logoValory img{
+
+#logoValory img {
     position: absolute;
     width: 8rem;
     height: auto;
 }
 
-#image img{
+#image img {
     width: 20rem;
     display: block;
     margin: auto;
 }
-#logo{
+
+#logo {
     display: flex;
     justify-content: center;
 }
-#model{
+
+#model {
     position: relative;
     height: 20%;
     width: 100%;
 }
-table tr{
+
+table tr {
     border-bottom: 1px solid blueviolet;
 }
-table{
+
+table {
     border-collapse: collapse;
 }
-.DaneDuzyOpis{
+
+.DaneDuzyOpis {
     text-align: right;
     padding-right: 1rem;
 }
-.equipment{
+
+.equipment {
     padding-left: 3rem;
     border-bottom: 2px solid black;
     margin-left: 2rem;
     margin-right: 2rem;
 
 }
-.equipment p{
+
+.equipment p {
     border-bottom: 1px solid blueviolet;
     margin-right: 15rem;
 }
-.equipment img{
+
+.equipment img {
     width: 6rem;
     height: auto;
 }
-.equipment span{
-padding-left: 1rem;
-padding-bottom: 1rem;
-line-height: 1rem;
-padding-bottom: 1rem;
+
+.equipment span {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
 }
-ul{
+
+ul {
     list-style: none;
 }
-li{
+
+li {
     margin-bottom: 1rem;
 }
-.equipment p:last-child{
+
+.equipment p:last-child {
     border-bottom: none;
 }
-.equipment tr{
+
+.equipment tr {
     height: 3rem;
 }
-#options{
+
+#options {
     overflow-y: scroll;
     flex-direction: column;
     height: 90%;
 }
-#checkout{
+
+#checkout {
     float: left;
     height: 10%;
     background-color: #e9e9e9;
 }
-#checkout button{
+
+#checkout button {
     width: 10rem;
     height: 3rem;
     margin-top: 1rem;
 }
-table tr:last-child{
+
+table tr:last-child {
     border-bottom: none;
 }
-#Order{
-float: right;
+
+#Order {
+    float: right;
 }
-.invi{
-margin-left: 3rem;
-margin-top: 2rem;
+
+.invi {
+    margin-left: 3rem;
+    margin-top: 2rem;
 }
-.textinv{
+
+.textinv {
     margin-left: 1rem;
 }
-#left h1{
+
+#left h1 {
     margin: 0;
 }
-#left h2{
+
+#left h2 {
     margin: 0;
 }
-#pricesteering{
+
+#pricesteering {
     margin-left: 11rem;
 }
-#steering_wheels{
+
+#steering_wheels {
     display: none;
 }
-.equprice{
+
+.equprice {
     margin-left: 30rem;
 }

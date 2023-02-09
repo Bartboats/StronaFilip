@@ -76,7 +76,7 @@
             if (document.getElementById('HYD_Steering_system').checked == 1) {
                 value = value + 640;
             }
-            if (document.getElementById('Steering_system').checked == 1) {
+            if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1 ) {
                 if (document.getElementById('st5').checked == 1) {
                     value = value + 0;
                 }
@@ -86,6 +86,7 @@
                 if (document.getElementById('st7').checked == 1) {
                     value = value + 350;
                 }
+            }
                 if (document.getElementById('Ambient_lighting_cockpit+').checked == 1) {
                     value = value + 200;
                 }
@@ -119,7 +120,6 @@
                 if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
                     value = value + 350;
                 }
-            }
             document.getElementById('Order').innerText = "Price: " + value;
             localStorage.setItem("Totalprice", value);
         }

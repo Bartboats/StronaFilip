@@ -28,6 +28,7 @@
             document.getElementById("Electrical_package").checked = false;
             // document.getElementById("LED_Navilights").checked = false;
             document.getElementById("Ambient_lighting_cockpit+").checked = false;
+            document.getElementById("Ambient_lighting_cabin+").checked = false;
             document.getElementById("VALORY key ring").checked = false;
             document.getElementById("Captain side Bag").checked = false;
             document.getElementById("VALORY pillow").checked = false;
@@ -88,6 +89,9 @@
                 }
             }
                 if (document.getElementById('Ambient_lighting_cockpit+').checked == 1) {
+                    value = value + 200;
+                }
+                if (document.getElementById('Ambient_lighting_cabin+').checked == 1) {
                     value = value + 200;
                 }
                 // if (document.getElementById('LED_Navilights').checked == 1) {
@@ -230,6 +234,8 @@
 
             if (document.getElementById('Ambient_lighting_cockpit+').checked == 1)
                 localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cockpit+').value);
+            if (document.getElementById('Ambient_lighting_cabin+').checked == 1)
+                localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cabin+').value);
             // if (document.getElementById('LED_Navilights').checked == 1)
             //     localStorage.setItem("LEDNavilights", document.getElementById('LED_Navilights').value);
             if (document.getElementById('Electrical_package').checked == 1)
@@ -623,7 +629,7 @@
                                 </tr>
                                 <tr>
                                     <td>Ambient lighting cabin+ </td>
-                                    <td>200,00<input value="Ambient lighting cockpit" id="Ambient_lighting_cabin"
+                                    <td>200,00<input value="Ambient lighting cockpit" id="Ambient_lighting_cabin+"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>

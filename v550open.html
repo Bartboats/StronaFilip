@@ -19,7 +19,8 @@
             document.getElementById("fbbrown").checked = true;
             document.getElementById("Steering_system").checked = false;
             document.getElementById("Fuel_tank_43L_package").checked = false;
-            document.getElementById("Hidden_cleat_4_pcs").checked = false;
+            document.getElementById("Hiddencleat4pcs").checked = false;
+            document.getElementById("Watertank / shower").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
             document.getElementById("Teak_Table").checked = false;
@@ -106,8 +107,11 @@
                 if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1) {
                     value = value + 205;
                 }
-                if (document.getElementById('Hidden_cleat_4_pcs').checked == 1) {
+                if (document.getElementById('Hiddencleat4pcs').checked == 1) {
                     value = value + 420;
+                }
+                if (document.getElementById('Watertank / shower').checked == 1) {
+                    value = value + 350;
                 }
                 if (document.getElementById('Fuel_tank_43L_package').checked == 1) {
                     value = value + 490;
@@ -217,6 +221,7 @@
             localStorage.setItem("Bimini", '0');
             localStorage.setItem("Sstellcupholder10pcs", '0');
             localStorage.setItem("Hiddencleat4pcs", '0');
+            localStorage.setItem("Watertank / shower", '0');
             localStorage.setItem("Fueltank43Lpackage", '0');
             localStorage.setItem("Fueltank75Lpackage", '0');
             localStorage.setItem("VALORY key ring", '0');
@@ -237,10 +242,12 @@
                 localStorage.setItem("Bimini", document.getElementById('Bimini').value);
             if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1)
                 localStorage.setItem("Sstellcupholder10pcs", document.getElementById('S_-stell_cupholder_10 pcs').value);
-            if (document.getElementById('Hidden_cleat_4_pcs').checked == 1)
-                localStorage.setItem("Hiddencleat4pcs", document.getElementById('Hidden_cleat_4_pcs').value);
-            if (document.getElementById('Fuel_tank_43L_package').checked == 1)
-                localStorage.setItem("Fueltank43Lpackage", document.getElementById('Fuel_tank_43L_package').value);
+            if (document.getElementById('Hiddencleat4pcs').checked == 1)
+                localStorage.setItem("Hiddencleat4pcs", document.getElementById('Hiddencleat4pcs').value);
+            if (document.getElementById('Fuel_tank_75L_package').checked == 1)
+                localStorage.setItem("Fueltank75Lpackage", document.getElementById('Fuel_tank_75L_package').value);
+            if (document.getElementById('Watertank / shower').checked == 1)
+                localStorage.setItem("Watertank / shower", document.getElementById('Watertank / shower').value);
 
             if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
@@ -645,12 +652,17 @@
                                 </tr>
                                 <tr>
                                     <td>Hidden cleat 4 pcs</td>
-                                    <td>420,00<input value="Hidden cleat 4 pcs" id="Hidden_cleat_4_pcs" type="checkbox"
+                                    <td>420,00<input value="Hidden cleat 4 pcs" id="Hiddencleat4pcs" type="checkbox"
                                             onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Fuel tank 43L package</td>
-                                    <td>490,00<input value="Fuel tank 43L package" id="Fuel_tank_43L_package"
+                                    <td>Fuel tank 75L package</td>
+                                    <td>600,00<input value="Fuel tank 75L package" id="Fuel_tank_75L_package"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Watertank / shower</td>
+                                    <td>350,00<input value="Watertank / shower" id="Watertank / shower"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>

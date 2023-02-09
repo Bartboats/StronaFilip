@@ -22,6 +22,7 @@
             document.getElementById("Hiddencleat4pcs").checked = false;
             document.getElementById("Watertank / shower").checked = false;
             document.getElementById("Towing handle").checked = false;
+            document.getElementById("Second seat").checked = false;
             document.getElementById("Windscreen railing").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
@@ -122,6 +123,9 @@
                 }
                 if (document.getElementById('Towing handle').checked == 1) {
                     value = value + 90;
+                }
+                if (document.getElementById('Second seat').checked == 1) {
+                    value = value + 500;
                 }
                 if (document.getElementById('Windscreen railing').checked == 1) {
                     value = value + 260;
@@ -235,6 +239,7 @@
             localStorage.setItem("Hiddencleat4pcs", '0');
             localStorage.setItem("Watertank / shower", '0');
             localStorage.setItem("Towing handle", '0');
+            localStorage.setItem("Second seat", '0');
             localStorage.setItem("Windscreen railing", '0');
             localStorage.setItem("Fueltank43Lpackage", '0');
             localStorage.setItem("Fueltank75Lpackage", '0');
@@ -268,6 +273,8 @@
                 localStorage.setItem("Windscreen railing", document.getElementById('Windscreen railing').value);
             if (document.getElementById('Towing handle').checked == 1)
                 localStorage.setItem("Towing handle", document.getElementById('Towing handle').value);
+            if (document.getElementById('Second seat').checked == 1)
+                localStorage.setItem("Second seat", document.getElementById('Second seat').value);
 
             if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
@@ -693,6 +700,11 @@
                                 <tr>
                                     <td>Towing handle</td>
                                     <td>90,00<input value="Towing handle" id="Towing handle"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Second seat</td>
+                                    <td>500,00<input value="Second seat" id="Second seat"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>

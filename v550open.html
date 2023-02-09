@@ -21,6 +21,8 @@
             document.getElementById("Fuel_tank_75L_package").checked = false;
             document.getElementById("Hiddencleat4pcs").checked = false;
             document.getElementById("Watertank / shower").checked = false;
+            document.getElementById("Towing handle").checked = false;
+            document.getElementById("Windscreen railing").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
             document.getElementById("Teak_Table").checked = false;
@@ -117,6 +119,12 @@
                 }
                 if (document.getElementById('Watertank / shower').checked == 1) {
                     value = value + 350;
+                }
+                if (document.getElementById('Towing handle').checked == 1) {
+                    value = value + 90;
+                }
+                if (document.getElementById('Windscreen railing').checked == 1) {
+                    value = value + 260;
                 }
                 if (document.getElementById('Fuel_tank_75L_package').checked == 1) {
                     value = value + 600;
@@ -226,6 +234,8 @@
             localStorage.setItem("Sstellcupholder10pcs", '0');
             localStorage.setItem("Hiddencleat4pcs", '0');
             localStorage.setItem("Watertank / shower", '0');
+            localStorage.setItem("Towing handle", '0');
+            localStorage.setItem("Windscreen railing", '0');
             localStorage.setItem("Fueltank43Lpackage", '0');
             localStorage.setItem("Fueltank75Lpackage", '0');
             localStorage.setItem("VALORY key ring", '0');
@@ -254,6 +264,10 @@
                 localStorage.setItem("Fueltank75Lpackage", document.getElementById('Fuel_tank_75L_package').value);
             if (document.getElementById('Watertank / shower').checked == 1)
                 localStorage.setItem("Watertank / shower", document.getElementById('Watertank / shower').value);
+            if (document.getElementById('Windscreen railing').checked == 1)
+                localStorage.setItem("Windscreen railing", document.getElementById('Windscreen railing').value);
+            if (document.getElementById('Towing handle').checked == 1)
+                localStorage.setItem("Towing handle", document.getElementById('Towing handle').value);
 
             if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
@@ -669,6 +683,16 @@
                                 <tr>
                                     <td>Watertank / shower</td>
                                     <td>350,00<input value="Watertank / shower" id="Watertank / shower"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Windscreen railing</td>
+                                    <td>260,00<input value="Windscreen railing" id="Windscreen railing"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Towing handle</td>
+                                    <td>90,00<input value="Towing handle" id="Towing handle"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>

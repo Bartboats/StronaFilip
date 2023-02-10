@@ -15,7 +15,7 @@
             document.getElementById("cpblack").checked = false;
             document.getElementById("h9016").checked = true;
             document.getElementById("d9016").checked = true;
-            document.getElementById("usnavy").checked = true;
+            document.getElementById("ecoleather").checked = true;
             // document.getElementById("fbbrown").checked = true;
             document.getElementById("Steering_system").checked = false;
             document.getElementById("Fuel_tank_75L_package").checked = false;
@@ -137,7 +137,7 @@
                 if (document.getElementById('Fuel_tank_75L_package').checked == 1) {
                     value = value + 600;
                 }
-                if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
+                if (document.getElementById('ecoleather').checked == 0) {
                     value = value + 350;
                 }
             document.getElementById('Order').innerText = "Price: " + value;
@@ -181,20 +181,20 @@
             if (document.getElementById('dinv').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('dinvd').value);
 
-            if (document.getElementById('usnavy').checked == 1)
-                localStorage.setItem("upholster", document.getElementById('usnavy').value);
-            if (document.getElementById('usgrey').checked == 1)
-                localStorage.setItem("upholster", document.getElementById('usgrey').value);
-            if (document.getElementById('usbeige').checked == 1)
-                localStorage.setItem("upholster", document.getElementById('usbeige').value);
+            if (document.getElementById('ecoleather').checked == 1)
+                localStorage.setItem("upholster", document.getElementById('ecoleather').value);
+            // if (document.getElementById('usgrey').checked == 1)
+            //     localStorage.setItem("upholster", document.getElementById('usgrey').value);
+            // if (document.getElementById('usbeige').checked == 1)
+            //     localStorage.setItem("upholster", document.getElementById('usbeige').value);
             if (document.getElementById('upnavy').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upnavy').value);
             if (document.getElementById('upgrey').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upgrey').value);
             if (document.getElementById('upbeige').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upbeige').value);
-            if (document.getElementById('uporange').checked == 1)
-                localStorage.setItem("upholster", document.getElementById('uporange').value);
+            // if (document.getElementById('uporange').checked == 1)
+            //     localStorage.setItem("upholster", document.getElementById('uporange').value);
 
             if (document.getElementById('fbgrey').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fbgrey').value);
@@ -463,21 +463,12 @@
                 </div>
                 <div class="equipment">
                     <h1>Upholstery</h1>
-                    <h2>Standard</h2>
+                    <h2>Standard (eco leather)</h2>
                     <ul>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/image-015.jpg"><span>navy blue</span><input
-                                    value="Navy blue" type="radio" id="usnavy" checked name="upholsterystandard"
+                            <div><img src="themes/ValoryBoats/images/ecoleather.jpg"><span>White-grey</span><input
+                                    value="eco leather White-grey" type="radio" id="ecoleather" checked name="upholsterystandard"
                                     onclick="Order()"></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-016.jpg"><span>grey</span><input type="radio"
-                                    value="Grey" id="usgrey" name="upholsterystandard" onclick="Order()"></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-017.jpg"><span>beige</span><input
-                                    type="radio" value="Beige" id="usbeige" name="upholsterystandard" onclick="Order()">
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -500,11 +491,7 @@
                                     type="radio" id="upbeige" value="Premium Beige" name="upholsterystandard"
                                     onclick="Order()"></div>
                         </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-024.jpg"><span>orange brown</span><input
-                                    type="radio" value="Orange Brown" id="uporange" name="upholsterystandard"
-                                    onclick="Order()"></div>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="equipment">

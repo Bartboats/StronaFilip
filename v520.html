@@ -13,7 +13,6 @@
         {
             document.getElementById("cpblack").checked = false;
             document.getElementById("h9016").checked = true;
-            document.getElementById("d9016").checked = true;
             document.getElementById("usnavy").checked = true;
             document.getElementById("fbbrown").checked = true;
             document.getElementById("st1").checked = true;
@@ -43,9 +42,6 @@
         function Order(){
             let value = 5600;
             if(document.getElementById('hinv').checked==1){
-                value = value + 250;
-            }
-            if(document.getElementById('dinv').checked==1){
                 value = value + 250;
             }
             if(document.getElementById('fbbrown').checked == 0 && document.getElementById('fbgrey').checked == 0 ){

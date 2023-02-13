@@ -226,6 +226,8 @@
             localStorage.setItem("sterringsys", 'none');
             if (document.getElementById('Steering_system').checked == 1)
                 localStorage.setItem("sterringsys", document.getElementById('Steering_system').value);
+            if (document.getElementById('HYD_Steering_system').checked == 1)
+                localStorage.setItem("sterringsys", document.getElementById('HYD_Steering_system').value);
 
             localStorage.setItem("sterringwheel", 'none');
             // if (document.getElementById('st1').checked == 1)
@@ -585,7 +587,7 @@
                         </li>
                         <li>
                             <div><span>Hydraulic steering system</span><span id="pricesteering">640,00</span><input
-                                    type="radio" value="Steering system" name="sterring" id="HYD_Steering_system"
+                                    type="radio" value="Hydraulic steering system" name="sterring" id="HYD_Steering_system"
                                     onclick="Steering(); Order()"></div>
                         </li>
                     </ul>

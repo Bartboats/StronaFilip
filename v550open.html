@@ -242,6 +242,7 @@
                 localStorage.setItem("sterringwheel", document.getElementById('st7').value);
 
             localStorage.setItem("ambientlight", '0');
+            localStorage.setItem("ambientlightcabin", '0');
             localStorage.setItem("LEDNavilights", '0');
             localStorage.setItem("Electricalpackage", '0');
             localStorage.setItem("Bathingladder", '0');
@@ -263,7 +264,7 @@
             if (document.getElementById('Ambient_lighting_cockpit+').checked == 1)
                 localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cockpit+').value);
             if (document.getElementById('Ambient_lighting_cabin+').checked == 1)
-                localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cabin+').value);
+                localStorage.setItem("ambientlightcabin", document.getElementById('Ambient_lighting_cabin+').value);
             // if (document.getElementById('LED_Navilights').checked == 1)
             //     localStorage.setItem("LEDNavilights", document.getElementById('LED_Navilights').value);
             if (document.getElementById('Electrical_package').checked == 1)
@@ -298,6 +299,11 @@
             if (document.getElementById('VALORY pillow').checked == 1)
                 localStorage.setItem("VALORY pillow", document.getElementById('VALORY pillow').value);
 
+            if (document.getElementById('seatbeige').checked == 1)
+                localStorage.setItem("seat", document.getElementById('seatbeige').value);
+                
+            if (document.getElementById('seatgrey').checked == 1)
+                localStorage.setItem("seat", document.getElementById('seatgrey').value);
 
 
 
@@ -547,12 +553,12 @@
                     <h2>Standard</h2>
                     <ul>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>grey deluxe</span><input
-                                    type="radio" id="seatbeige" name="seat" onclick="Order()" checked></div>
+                            <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>beige deluxe</span><input
+                                    type="radio" id="seatbeige" name="seat" value="Seat beige deluxe" onclick="Order()" checked></div>
                         </li>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>beige deluxe</span><input
-                                    type="radio" id="seatgrey" name="seat" onclick="Order()"></div>
+                            <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>grey deluxe</span><input
+                                    type="radio" id="seatgrey" name="seat" value="Seat grey deluxe" onclick="Order()"></div>
                         </li>
                     </ul>
                 </div>

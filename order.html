@@ -196,6 +196,8 @@
        
         if(localStorage.getItem("ambientlight") != '0'){
         document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("ambientlight") + `</td></tr>`);}
+        if(localStorage.getItem("ambientlightcabin") != '0'){
+        document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("ambientlightcabin") + `</td></tr>`);}
         if(localStorage.getItem("LEDNavilights") != '0'){
         document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("LEDNavilights") + `</td></tr>`);}
         if(localStorage.getItem("Electricalpackage") != '0'){
@@ -223,10 +225,6 @@
 
         if(localStorage.getItem("seat") != '0'){
         document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("seat") + `</td></tr>`);}
-        if(localStorage.getItem("sterringsys") != '0'){
-        document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("sterringsys") + `</td></tr>`);}
-        if(localStorage.getItem("ambientlightcabin") != '0'){
-        document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("ambientlightcabin") + `</td></tr>`);}
         if(localStorage.getItem("Watertank / shower") != '0'){
         document.getElementById("tableopt").insertAdjacentHTML('beforeend' ,`<tr><td>`  + localStorage.getItem("Watertank / shower") + `</td></tr>`);}
         if(localStorage.getItem("Towing handle") != '0'){

@@ -18,12 +18,11 @@
             document.getElementById("ecoleather").checked = true;
             // document.getElementById("fbbrown").checked = true;
             document.getElementById("Steering_system").checked = false;
-            document.getElementById("Fuel_tank_75L_package").checked = false;
+            document.getElementById("Fuel_tank_90L_package").checked = false;
             document.getElementById("Hiddencleat4pcs").checked = false;
             document.getElementById("Watertank / shower").checked = false;
             document.getElementById("Towing handle").checked = false;
-            document.getElementById("Second seat").checked = false;
-            document.getElementById("Sundeck with cushion").checked = false;
+            document.getElementById("Harbour cover").checked = false;
             document.getElementById("Windscreen railing").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
@@ -45,7 +44,7 @@
             document.getElementById("fesport").checked = false;
 
 
-            localStorage.setItem("Totalprice", "7500");
+            localStorage.setItem("Totalprice", "11000");
         }
         function Steering() {
             if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1) {
@@ -56,7 +55,7 @@
             }
         }
         function Order() {
-            let value = 7500;
+            let value = 11000;
             if (document.getElementById('hinv').checked == 1) {
                 value = value + 250;
             }
@@ -65,10 +64,10 @@
             }
             if(document.getElementById('fpdarkgrey').checked == 1 || document.getElementById('fpgrey').checked == 1 || document.getElementById('fpbrown').checked == 1  || document.getElementById('fplightgrey').checked == 1  || document.getElementById('fpbeige').checked == 1 || document.getElementById('fesport').checked == 1 ){
                 if (document.getElementById('fesport').checked == 1) {
-                    value = value + 780;
+                    value = value + 750;
                 }
                 else {
-                    value = value + 780;
+                    value = value + 750;
                 }
             }
             if (document.getElementById('cpblack').checked == 1) {
@@ -133,6 +132,9 @@
                 if (document.getElementById('Towing handle').checked == 1) {
                     value = value + 90;
                 }
+                if (document.getElementById('Harbour cover').checked == 1) {
+                    value = value + 900;
+                }
                 if (document.getElementById('Second seat').checked == 1) {
                     value = value + 500;
                 }
@@ -140,13 +142,13 @@
                     value = value + 350;
                 }
                 if (document.getElementById('Windscreen railing').checked == 1) {
-                    value = value + 260;
+                    value = value + 300;
                 }
-                if (document.getElementById('Fuel_tank_75L_package').checked == 1) {
-                    value = value + 600;
+                if (document.getElementById('Fuel_tank_90L_package').checked == 1) {
+                    value = value + 650;
                 }
                 if (document.getElementById('ecoleather').checked == 0) {
-                    value = value + 350;
+                    value = value + 500;
                 }
             document.getElementById('Order').innerText = "Price: " + value;
             localStorage.setItem("Totalprice", value);
@@ -158,9 +160,9 @@
         }
         function session() {
 
-            localStorage.setItem("model", "Valory 550 OPEN");
+            localStorage.setItem("model", "Valory 630");
             localStorage.setItem("Ropecolor", "(no available in this model)");
-            localStorage.setItem("Baseprice", "7500");
+            localStorage.setItem("Baseprice", "11000");
 
 
             // HULL COLOR
@@ -252,6 +254,7 @@
             localStorage.setItem("Hiddencleat4pcs", '0');
             localStorage.setItem("Watertank / shower", '0');
             localStorage.setItem("Towing handle", '0');
+            localStorage.setItem("Harbour cover", '0');
             localStorage.setItem("Second seat", '0');
             localStorage.setItem("Sundeck with cushion", '0');
             localStorage.setItem("Windscreen railing", '0');
@@ -280,14 +283,16 @@
                 localStorage.setItem("Sstellcupholder10pcs", document.getElementById('S_-stell_cupholder_10 pcs').value);
             if (document.getElementById('Hiddencleat4pcs').checked == 1)
                 localStorage.setItem("Hiddencleat4pcs", document.getElementById('Hiddencleat4pcs').value);
-            if (document.getElementById('Fuel_tank_75L_package').checked == 1)
-                localStorage.setItem("Fueltank75Lpackage", document.getElementById('Fuel_tank_75L_package').value);
+            if (document.getElementById('Fuel_tank_90L_package').checked == 1)
+                localStorage.setItem("Fueltank75Lpackage", document.getElementById('Fuel_tank_90L_package').value);
             if (document.getElementById('Watertank / shower').checked == 1)
                 localStorage.setItem("Watertank / shower", document.getElementById('Watertank / shower').value);
             if (document.getElementById('Windscreen railing').checked == 1)
                 localStorage.setItem("Windscreen railing", document.getElementById('Windscreen railing').value);
             if (document.getElementById('Towing handle').checked == 1)
                 localStorage.setItem("Towing handle", document.getElementById('Towing handle').value);
+            if (document.getElementById('Harbour cover').checked == 1)
+                localStorage.setItem("Harbour cover", document.getElementById('Harbour cover').value);
             if (document.getElementById('Second seat').checked == 1)
                 localStorage.setItem("Second seat", document.getElementById('Second seat').value);
             if (document.getElementById('Sundeck with cushion').checked == 1)
@@ -322,7 +327,7 @@
             </div>
             <div id="model">
                 <h2>Boat order form</h2>
-                <h1>Premium V 550 open</h1>
+                <h1>Premium V 630</h1>
             </div>
             <div id="image">
                 <img src="themes/ValoryBoats/images/v630.jpeg">
@@ -490,7 +495,7 @@
                 <div class="equipment">
                     <h1>Upholstery</h1>
                     <h2>Premium</h2>
-                    <span class="equprice">+ &euro;350,00</span>
+                    <span class="equprice">+ &euro;500,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-021.jpg"><span>navy blue</span><input
@@ -512,7 +517,7 @@
                 <div class="equipment">
                     <h1>Flexi Teak</h1>
                     <h2>Floor</h2>
-                    <span class="equprice">+ &euro;780,00</span>
+                    <span class="equprice">+ &euro;750,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input
@@ -540,26 +545,12 @@
                         </li>
                     </ul>
                     <h2>Exclusive</h2>
-                    <span class="equprice">+ &euro;780,00</span>
+                    <span class="equprice">+ &euro;750,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input
                                     type="radio" id="fesport" name="flexi" value="Floor Sport"
                                     onclick="Order()"></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="equipment">
-                    <h1>Seat</h1>
-                    <h2>Standard</h2>
-                    <ul>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>beige deluxe</span><input
-                                    type="radio" id="seatbeige" name="seat" value="Seat beige deluxe" onclick="Order()" checked></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>grey deluxe</span><input
-                                    type="radio" id="seatgrey" name="seat" value="Seat grey deluxe" onclick="Order()"></div>
                         </li>
                     </ul>
                 </div>
@@ -683,8 +674,8 @@
                                             onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Fuel tank 75L package</td>
-                                    <td>600,00<input value="Fuel tank 75L package" id="Fuel_tank_75L_package"
+                                    <td>Fuel tank 90L package</td>
+                                    <td>650,00<input value="Fuel tank 90L package" id="Fuel_tank_90L_package"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
@@ -694,7 +685,7 @@
                                 </tr>
                                 <tr>
                                     <td>Windscreen railing</td>
-                                    <td>260,00<input value="Windscreen railing" id="Windscreen railing"
+                                    <td>300,00<input value="Windscreen railing" id="Windscreen railing"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
@@ -703,13 +694,8 @@
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Second seat</td>
-                                    <td>500,00<input value="Second seat" id="Second seat"
-                                            type="checkbox" onclick="Order()"></td>
-                                </tr>
-                                <tr>
-                                    <td>Sundeck with cushion</td>
-                                    <td>350,00<input value="Sundeck with cushion" id="Sundeck with cushion"
+                                    <td>Harbour cover</td>
+                                    <td>900,00<input value="Harbour cover" id="Harbour cover"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>
@@ -719,7 +705,7 @@
             </div>
             <div id="checkout">
                 <button id="back">back</button>
-                <button id="Order" name="Order" onclick="session()">Price: 7500</button>
+                <button id="Order" name="Order" onclick="session()">Price: 11 000</button>
             </div>
         </div>
     </div>

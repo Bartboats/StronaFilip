@@ -120,8 +120,8 @@
                 if (document.getElementById('Fuel_tank_33L_package').checked == 1) {
                     value = value + 450;
                 }
-                if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
-                    value = value + 400;
+                if (document.getElementById('ecoleather').checked == 0) {
+                    value = value + 350;
                 }
             }
             document.getElementById('Order').innerText = "Price: " + value;
@@ -447,18 +447,9 @@
                     <h2>Standard</h2>
                     <ul>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/image-015.jpg"><span>navy blue</span><input
-                                    value="Navy blue" type="radio" id="usnavy" checked name="upholsterystandard"
+                            <div><img src="themes/ValoryBoats/images/ecoleather.jpg"><span>White-grey</span><input
+                                    value="eco leather White-grey" type="radio" id="ecoleather" checked name="upholsterystandard"
                                     onclick="Order()"></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-016.jpg"><span>grey</span><input type="radio"
-                                    value="Grey" id="usgrey" name="upholsterystandard" onclick="Order()"></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-017.jpg"><span>beige</span><input
-                                    type="radio" value="Beige" id="usbeige" name="upholsterystandard" onclick="Order()">
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -479,11 +470,6 @@
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-023.jpg"><span>beige</span><input
                                     type="radio" id="upbeige" value="Premium Beige" name="upholsterystandard"
-                                    onclick="Order()"></div>
-                        </li>
-                        <li>
-                            <div><img src="themes/ValoryBoats/images/image-024.jpg"><span>orange brown</span><input
-                                    type="radio" value="Orange Brown" id="uporange" name="upholsterystandard"
                                     onclick="Order()"></div>
                         </li>
                     </ul>
@@ -519,7 +505,7 @@
                         </li>
                     </ul>
                     <h2>Exclusive</h2>
-                    <span class="equprice">+ &euro;620,00</span>
+                    <span class="equprice">+ &euro;750,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input
@@ -550,6 +536,16 @@
                         <li>
                             <div><img src="themes/ValoryBoats/images/cabrio.jpg"><span>black</span><input
                                     type="checkbox" value="Black" id="cpblack" name="cabrio" onclick="Order()"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Bimini</h1>
+                    <span class="equprice">+ &euro;600</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/bimini.png"><span>bimini</span><input
+                                    type="checkbox" value="Bimini black" id="Bimini" name="bimini" onclick="Order()"></div>
                         </li>
                     </ul>
                 </div>

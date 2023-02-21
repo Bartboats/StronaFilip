@@ -33,7 +33,7 @@
             document.getElementById("VALORY key ring").checked = false;
             document.getElementById("Captain side Bag").checked = false;
             document.getElementById("VALORY pillow").checked = false;
-            localStorage.setItem("Totalprice", "7500");
+            localStorage.setItem("Totalprice", "4900");
         }
         function Steering() {
             if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1) {
@@ -44,7 +44,7 @@
             }
         }
         function Order() {
-            let value = 7500;
+            let value = 4900;
             if (document.getElementById('hinv').checked == 1) {
                 value = value + 250;
             }
@@ -53,10 +53,10 @@
             }
             if (document.getElementById('fbbrown').checked == 0 && document.getElementById('fbgrey').checked == 0) {
                 if (document.getElementById('fesport').checked == 1) {
-                    value = value + 620;
+                    value = value + 750;
                 }
                 else {
-                    value = value + 580;
+                    value = value + 750;
                 }
             }
             if (document.getElementById('cpblack').checked == 1) {
@@ -136,7 +136,7 @@
 
             localStorage.setItem("model", "Valory 440 OPEN");
             localStorage.setItem("Ropecolor", "(no available in this model)");
-            localStorage.setItem("Baseprice", "7500");
+            localStorage.setItem("Baseprice", "4900");
 
 
 
@@ -292,7 +292,7 @@
                 <h1>Premium V 440 open</h1>
             </div>
             <div id="image">
-                <img src="themes/ValoryBoats/images/valory440open.jpg>
+                <img src="themes/ValoryBoats/images/valory440open.jpg">
             </div>
             <div id="spec">
                 <h3>Specification</h3>
@@ -502,7 +502,7 @@
                         </li>
                     </uL>
                     <h2>Bow + cockpit</h2>
-                    <span class="equprice">+ &euro;580,00</span>
+                    <span class="equprice">+ &euro;750,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input
@@ -633,13 +633,13 @@
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>LED Navilights</td>
-                                    <td>110,00<input value="LED Navilights" id="LED_Navilights" type="checkbox" onclick="Order()"></td>
-                                </tr>
-                                <tr>
                                     <td>Electrical package</td>
                                     <td>450,00<input value="Electrical package" id="Electrical_package" type="checkbox"
                                             onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>LED Navilights</td>
+                                    <td>110,00<input value="LED Navilights" id="LED_Navilights" type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
                                     <td>Bathing ladder</td>
@@ -652,8 +652,18 @@
                                             onclick="Order()"></td>
                                 </tr>
                                 <tr>
+                                    <td>Fuel tank 33L package</td>
+                                    <td>450,00<input value="Fuel tank 75L package" id="Fuel_tank_33L_package"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
                                     <td>Watertank / shower</td>
                                     <td>350,00<input value="Watertank / shower" id="Watertank / shower"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Windscreen railing</td>
+                                    <td>260,00<input value="Windscreen railing" id="Windscreen railing"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
@@ -662,8 +672,8 @@
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Fuel tank 33L package</td>
-                                    <td>450,00<input value="Fuel tank 33L package" id="Fuel_tank_33L_package"
+                                    <td>Sundeck with cushion</td>
+                                    <td>350,00<input value="Sundeck with cushion" id="Sundeck with cushion"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>
@@ -673,7 +683,7 @@
             </div>
             <div id="checkout">
                 <button id="back">back</button>
-                <button id="Order" name="Order" onclick="session()">Price: 7500</button>
+                <button id="Order" name="Order" onclick="session()">Price: 4900</button>
             </div>
         </div>
     </div>

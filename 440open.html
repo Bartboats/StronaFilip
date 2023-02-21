@@ -19,10 +19,13 @@
             document.getElementById("fbbrown").checked = true;
             document.getElementById("Steering_system").checked = false;
             document.getElementById("Fuel_tank_43L_package").checked = false;
+            document.getElementById("Fuel_tank_33L_package").checked = false;
             document.getElementById("Hidden_cleat_4_pcs").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
             document.getElementById("Teak_Table").checked = false;
+            document.getElementById("Watertank / shower").checked = false;
+            document.getElementById("Towing handle").checked = false;
             document.getElementById("Bathing_ladder").checked = false;
             document.getElementById("Electrical_package").checked = false;
             document.getElementById("LED_Navilights").checked = false;
@@ -99,6 +102,12 @@
                 if (document.getElementById('Teak_Table').checked == 1) {
                     value = value + 250;
                 }
+                if (document.getElementById('Watertank / shower').checked == 1) {
+                    value = value + 350;
+                }
+                if (document.getElementById('Towing handle').checked == 1) {
+                    value = value + 90;
+                }
                 if (document.getElementById('Bimini').checked == 1) {
                     value = value + 600;
                 }
@@ -108,11 +117,11 @@
                 if (document.getElementById('Hidden_cleat_4_pcs').checked == 1) {
                     value = value + 420;
                 }
-                if (document.getElementById('Fuel_tank_43L_package').checked == 1) {
-                    value = value + 490;
+                if (document.getElementById('Fuel_tank_33L_package').checked == 1) {
+                    value = value + 450;
                 }
                 if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
-                    value = value + 350;
+                    value = value + 400;
                 }
             }
             document.getElementById('Order').innerText = "Price: " + value;
@@ -228,8 +237,11 @@
             localStorage.setItem("Captain side Bag", '0');
             localStorage.setItem("VALORY pillow", '0');
             localStorage.setItem("seat",'0');
+
             if (document.getElementById('Ambient_lighting_cockpit+').checked == 1)
                 localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cockpit+').value);
+            if (document.getElementById('LED_Navilights').checked == 1)
+                localStorage.setItem("LED_Navilights", document.getElementById('LED_Navilights').value);
             if (document.getElementById('LED_Navilights').checked == 1)
                 localStorage.setItem("LEDNavilights", document.getElementById('LED_Navilights').value);
             if (document.getElementById('Electrical_package').checked == 1)
@@ -238,6 +250,10 @@
                 localStorage.setItem("Bathingladder", document.getElementById('Bathing_ladder').value);
             if (document.getElementById('Teak_Table').checked == 1)
                 localStorage.setItem("TeakTable", document.getElementById('Teak_Table').value);
+            if (document.getElementById('Watertank / shower').checked == 1)
+                localStorage.setItem("Watertank / shower", document.getElementById('Watertank / shower').value);
+            if (document.getElementById('Towing handle').checked == 1)
+                localStorage.setItem("Towing handle", document.getElementById('Towing handle').value);
             if (document.getElementById('Bimini').checked == 1)
                 localStorage.setItem("Bimini", document.getElementById('Bimini').value);
             if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1)
@@ -246,6 +262,8 @@
                 localStorage.setItem("Hiddencleat4pcs", document.getElementById('Hidden_cleat_4_pcs').value);
             if (document.getElementById('Fuel_tank_43L_package').checked == 1)
                 localStorage.setItem("Fueltank43Lpackage", document.getElementById('Fuel_tank_43L_package').value);
+            if (document.getElementById('Fuel_tank_33L_package').checked == 1)
+                localStorage.setItem("Fueltank33Lpackage", document.getElementById('Fuel_tank_33L_package').value);
 
             if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
@@ -357,13 +375,8 @@
                     <p>Electric bilge pump</p>
                     <p>Cupholder 2 pcs.</p>
                     <p>Cushion</p>
-                    <p> Railings 2 pcs.</p>
-                    <p>Windscreen black</p>
-                    <p>White color</p>
-                    <p>Captain seat</p>
-                    <p>Sport st. wheel GUSSI molino</p>
-                    <p>LED Navilights</p>
-                    <p>Bathing ladder</p>
+                    <p>Railings 2 pcs.</p>
+                    <p>Windscreen</p>
                 </div>
                 <div class="equipment">
                     <h1>Hull color</h1>
@@ -452,7 +465,7 @@
                 <div class="equipment">
                     <h1>Upholstery</h1>
                     <h2>Premium</h2>
-                    <span class="equprice">+ &euro;350,00</span>
+                    <span class="equprice">+ &euro;400,00</span>
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-021.jpg"><span>navy blue</span><input
@@ -620,9 +633,8 @@
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Ambient lighting cabin+ </td>
-                                    <td>200,00<input value="Ambient lighting cockpit" id="Ambient_lighting_cabin"
-                                            type="checkbox" onclick="Order()"></td>
+                                    <td>LED Navilights</td>
+                                    <td>110,00<input value="LED Navilights" id="LED_Navilights" type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
                                     <td>Electrical package</td>
@@ -640,22 +652,18 @@
                                             onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Bimini</td>
-                                    <td>600,00<input value="Bimini" id="Bimini" type="checkbox" onclick="Order()"></td>
-                                </tr>
-                                <tr>
-                                    <td>S -stell cupholder 10 pcs</td>
-                                    <td>205,00<input value="S -stell cupholder 10 pcs" id="S_-stell_cupholder_10 pcs"
+                                    <td>Watertank / shower</td>
+                                    <td>350,00<input value="Watertank / shower" id="Watertank / shower"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Hidden cleat 4 pcs</td>
-                                    <td>420,00<input value="Hidden cleat 4 pcs" id="Hidden_cleat_4_pcs" type="checkbox"
-                                            onclick="Order()"></td>
+                                    <td>Towing handle</td>
+                                    <td>90,00<input value="Towing handle" id="Towing handle"
+                                            type="checkbox" onclick="Order()"></td>
                                 </tr>
                                 <tr>
-                                    <td>Fuel tank 43L package</td>
-                                    <td>490,00<input value="Fuel tank 43L package" id="Fuel_tank_43L_package"
+                                    <td>Fuel tank 33L package</td>
+                                    <td>450,00<input value="Fuel tank 33L package" id="Fuel_tank_33L_package"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>

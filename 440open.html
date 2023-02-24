@@ -246,7 +246,10 @@
             if (document.getElementById('VALORY pillow').checked == 1)
                 localStorage.setItem("VALORY pillow", document.getElementById('VALORY pillow').value);
 
-
+            if (document.getElementById('seatgrey').checked == 1)
+                localStorage.setItem("seat", document.getElementById('seatgrey').value);
+            if (document.getElementById('seatbeige').checked == 1)
+                localStorage.setItem("seat", document.getElementById('seatbeige').value);
 
 
             let person = prompt("Please enter dealership name", "");
@@ -493,11 +496,11 @@
                     <h2>Standard</h2>
                     <ul>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>grey deluxe</span><input
-                                    type="radio" id="seatgrey" onclick="Order()" name="seat" checked></div>
+                            <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>beige deluxe</span><input
+                                    type="radio" id="seatbeige" onclick="Order()" name="seat" checked></div>
                         </li>
                         <li>
-                            <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>beige deluxe</span><input
+                            <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>grey deluxe</span><input
                                     type="radio" id="seatgrey" onclick="Order()" name="seat"></div>
                         </li>
                     </ul>

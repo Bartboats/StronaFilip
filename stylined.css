@@ -10,3 +10,12 @@
     display: flex;
     flex-direction: column;
 }
+#lineselect{
+    padding: 2rem;
+    display: flex;
+}
+.option{
+    box-shadow: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}

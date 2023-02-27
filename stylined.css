@@ -38,6 +38,7 @@
 }
 
 #modelselect {
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,7 +51,7 @@
 }
 
 #classicmodels {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
 }

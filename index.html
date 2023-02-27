@@ -7,21 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valory order form</title>
     <link rel="stylesheet" href="stylined.css">
-
+<script>
+    function classic(){
+        document.getElementById("classicmodels").style.display="block"
+        document.getElementById("sportmodels").style.display="none"
+        document.getElementById("premiummodels").style.display="none"
+    }
+</script>
 </head>
 
 <body>
     <div id="main">
         <div id="logo"><img src="valory_black.svg" alt="Valory logo"></div>
         <div id="lineselect">
-            <div id="classic" class="option"><button>
-                <h2>Valory <br>Classic</h2></button>
+            <div id="classic" class="option" onclick="">
+                <h2>Valory <br>Classic</h2>
             </div>
-            <div id="sport" class="option"><button>
-                <h2>Valory <br>Sport</h2></button>
+            <div id="sport" class="option">
+                <h2>Valory <br>Sport</h2>
             </div>
-            <div id="premium" class="option"><button>
-                <h2>Valory <br>Premium</h2></button>
+            <div id="premium" class="option">
+                <h2>Valory <br>Premium</h2>
             </div>
         </div>
         <div id="modelselect">

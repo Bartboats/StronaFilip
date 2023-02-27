@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,10 @@
     <link rel="stylesheet" href="styl.css">
     <title>Boat order form V520</title>
 </head>
-<body onload = "refresh()" >
+
+<body onload="refresh()">
     <script>
-        function refresh()
-        {
+        function refresh() {
             document.getElementById("cpblack").checked = false;
             document.getElementById("h9016").checked = true;
             document.getElementById("usnavy").checked = true;
@@ -29,97 +30,100 @@
             document.getElementById("VALORY key ring").checked = false;
             document.getElementById("Captain side Bag").checked = false;
             document.getElementById("VALORY pillow").checked = false;
-            localStorage.setItem("Totalprice", "5600" );
+            localStorage.setItem("Totalprice", "5600");
         }
-        function Steering(){
-            if(document.getElementById('Steering_system').checked==1){
+        function Steering() {
+            if (document.getElementById('Steering_system').checked == 1) {
                 steering_wheels.style.display = 'block';
             }
-            else{
+            else {
                 steering_wheels.style.display = 'none';
             }
         }
-        function Order(){
+        function Order() {
             let value = 5600;
-            if(document.getElementById('hinv').checked==1){
+            if (document.getElementById('hinv').checked == 1) {
                 value = value + 500;
             }
-            if(document.getElementById('fbbrown').checked == 0 && document.getElementById('fbgrey').checked == 0 ){
-                if(document.getElementById('fesport').checked == 1){
+            if (document.getElementById('fbbrown').checked == 0 && document.getElementById('fbgrey').checked == 0) {
+                if (document.getElementById('fesport').checked == 1) {
                     value = value + 620;
                 }
-                else{
+                else {
                     value = value + 580;
                 }
             }
-            if(document.getElementById('cpblack').checked==1){
+            if (document.getElementById('cpblack').checked == 1) {
                 value = value + 1100;
             }
-        if(document.getElementById('VALORY key ring').checked==1){
-            value = value +  10;}
-        if(document.getElementById('Captain side Bag').checked==1){
-            value = value +  30;}
-        if(document.getElementById('VALORY pillow').checked==1){
-            value = value +  33;}
-        if(document.getElementById('Steering_system').checked==1){
-            value = value +  215;
-        }
-        if(document.getElementById('Steering_system').checked==1){
-        if(document.getElementById('st5').checked==1){
-            value = value +  110;
-        }
-        if(document.getElementById('st6').checked==1){
-            value = value +  150;
-        }
-        if(document.getElementById('st7').checked==1){
-            value = value +  350;
-        }
+            if (document.getElementById('VALORY key ring').checked == 1) {
+                value = value + 10;
+            }
+            if (document.getElementById('Captain side Bag').checked == 1) {
+                value = value + 30;
+            }
+            if (document.getElementById('VALORY pillow').checked == 1) {
+                value = value + 33;
+            }
+            if (document.getElementById('Steering_system').checked == 1) {
+                value = value + 215;
+            }
+            if (document.getElementById('Steering_system').checked == 1) {
+                if (document.getElementById('st5').checked == 1) {
+                    value = value + 110;
+                }
+                if (document.getElementById('st6').checked == 1) {
+                    value = value + 150;
+                }
+                if (document.getElementById('st7').checked == 1) {
+                    value = value + 350;
+                }
 
-            }   
-        if(document.getElementById('Ambient_lighting_cockpit+').checked==1){
-            value = value +  250;
+            }
+            if (document.getElementById('Ambient_lighting_cockpit+').checked == 1) {
+                value = value + 250;
+            }
+            if (document.getElementById('LED_Navilights').checked == 1) {
+                value = value + 110;
+            }
+            if (document.getElementById('Electrical_package').checked == 1) {
+                value = value + 390;
+            }
+            if (document.getElementById('Bathing_ladder').checked == 1) {
+                value = value + 145;
+            }
+            if (document.getElementById('Teak_Table').checked == 1) {
+                value = value + 250;
+            }
+            if (document.getElementById('Bimini').checked == 1) {
+                value = value + 650;
+            }
+            if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1) {
+                value = value + 205;
+            }
+            if (document.getElementById('Hidden_cleat_4_pcs').checked == 1) {
+                value = value + 420;
+            }
+            if (document.getElementById('Fuel_tank_43L_package').checked == 1) {
+                value = value + 490;
+            }
+            if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
+                value = value + 350;
+            }
+            document.getElementById('Order').innerText = "Price: " + value;
+            localStorage.setItem("Totalprice", value);
         }
-        if(document.getElementById('LED_Navilights').checked==1){
-            value = value +  110;
+        function Hullname() {
+            if (document.getElementById("hinv").checked == 1) {
+                return document.getElementById("hullral").value;
+            }
         }
-        if(document.getElementById('Electrical_package').checked==1){
-            value = value +  390;
-        }
-        if(document.getElementById('Bathing_ladder').checked==1){
-            value = value +  145;
-        }
-        if(document.getElementById('Teak_Table').checked==1){
-            value = value +  250;
-        }
-        if(document.getElementById('Bimini').checked==1){
-            value = value +  650;
-        }
-        if(document.getElementById('S_-stell_cupholder_10 pcs').checked==1){
-            value = value +  205;
-        }
-        if(document.getElementById('Hidden_cleat_4_pcs').checked==1){
-            value = value +  420;
-        }
-        if(document.getElementById('Fuel_tank_43L_package').checked==1){
-            value = value +  490;
-        }
-        if(document.getElementById('usnavy').checked==0 && document.getElementById('usgrey').checked==0 && document.getElementById('usbeige').checked==0){
-            value = value +  350;
-        }
-        document.getElementById('Order').innerText =  "Price: "+ value;
-        localStorage.setItem("Totalprice", value );
-    }
-    function  Hullname(){
-        if(document.getElementById("hinv").checked==1){
-            return document.getElementById("hullral").value;
-        }
-    }
-    function session(){
+        function session() {
 
             localStorage.setItem("model", "Valory 520");
             localStorage.setItem("Ropecolor", "(no available in this model)");
             localStorage.setItem("Baseprice", "5600");
-            
+
             localStorage.setItem("ambientlight", '0');
             localStorage.setItem("ambientlightcabin", '0');
             localStorage.setItem("LEDNavilights", '0');
@@ -139,349 +143,514 @@
             localStorage.setItem("VALORY key ring", '0');
             localStorage.setItem("Captain side Bag", '0');
             localStorage.setItem("VALORY pillow", '0');
-            localStorage.setItem("seat",'0');
-            localStorage.setItem("flexi",'none');
-            
+            localStorage.setItem("seat", '0');
+            localStorage.setItem("flexi", 'none');
 
-            if(document.getElementById('h9016').checked==1)
+
+            if (document.getElementById('h9016').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h9016').value);
-            if(document.getElementById('h7001').checked==1)
+            if (document.getElementById('h7001').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h7001').value);
-            if(document.getElementById('h9005').checked==1)
+            if (document.getElementById('h9005').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h9005').value);
-            if(document.getElementById('h5004').checked==1)
+            if (document.getElementById('h5004').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h5004').value);
-            if(document.getElementById('h7012').checked==1)
+            if (document.getElementById('h7012').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h7012').value);
-            if(document.getElementById('hinv').checked==1)
+            if (document.getElementById('hinv').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('hullral').value);
-                
-            if(document.getElementById('h9016').checked==1)
+
+            if (document.getElementById('h9016').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('h9016').value);
-            if(document.getElementById('h7001').checked==1)
+            if (document.getElementById('h7001').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('h7001').value);
-            if(document.getElementById('h9005').checked==1)
+            if (document.getElementById('h9005').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('h9005').value);
-            if(document.getElementById('h9005').checked==1)
+            if (document.getElementById('h9005').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('h9005').value);
-            if(document.getElementById('h7012').checked==1)
+            if (document.getElementById('h7012').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('h7012').value);
-            if(document.getElementById('hinv').checked==1)
+            if (document.getElementById('hinv').checked == 1)
                 localStorage.setItem("deckcolor", document.getElementById('hinv').value);
 
-            if(document.getElementById('usnavy').checked==1)
+            if (document.getElementById('usnavy').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('usnavy').value);
-            if(document.getElementById('usgrey').checked==1)
+            if (document.getElementById('usgrey').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('usgrey').value);
-            if(document.getElementById('usbeige').checked==1)
+            if (document.getElementById('usbeige').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('usbeige').value);
-            if(document.getElementById('upnavy').checked==1)
+            if (document.getElementById('upnavy').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upnavy').value);
-            if(document.getElementById('upgrey').checked==1)
+            if (document.getElementById('upgrey').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upgrey').value);
-            if(document.getElementById('upbeige').checked==1)
+            if (document.getElementById('upbeige').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upbeige').value);
-            if(document.getElementById('uporange').checked==1)
+            if (document.getElementById('uporange').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('uporange').value);
-            if(document.getElementById('upcarbon').checked==1)
+            if (document.getElementById('upcarbon').checked == 1)
                 localStorage.setItem("upholster", document.getElementById('upcarbon').value);
 
-            if(document.getElementById('fbgrey').checked==1)
+            if (document.getElementById('fbgrey').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fbgrey').value);
-            if(document.getElementById('fbbrown').checked==1)
+            if (document.getElementById('fbbrown').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fbbrown').value);
-            if(document.getElementById('fpdarkgrey').checked==1)
+            if (document.getElementById('fpdarkgrey').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fpdarkgrey').value);
-            if(document.getElementById('fpgrey').checked==1)
+            if (document.getElementById('fpgrey').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fpgrey').value);
-            if(document.getElementById('fpbrown').checked==1)
+            if (document.getElementById('fpbrown').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fpbrown').value);
-            if(document.getElementById('fplightgrey').checked==1)
+            if (document.getElementById('fplightgrey').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fplightgrey').value);
-            if(document.getElementById('fpbeige').checked==1)
+            if (document.getElementById('fpbeige').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fpbeige').value);
-            if(document.getElementById('fesport').checked==1)
+            if (document.getElementById('fesport').checked == 1)
                 localStorage.setItem("flexi", document.getElementById('fesport').value);
 
             localStorage.setItem("cabrio", 'None');
-            if(document.getElementById('cpblack').checked==1)
+            if (document.getElementById('cpblack').checked == 1)
                 localStorage.setItem("cabrio", document.getElementById('cpblack').value);
 
             localStorage.setItem("sterringsys", 'none');
-            if(document.getElementById('Steering_system').checked==1)
+            if (document.getElementById('Steering_system').checked == 1)
                 localStorage.setItem("sterringsys", document.getElementById('Steering_system').value);
-            
+
             localStorage.setItem("sterringwheel", 'none');
-            if(document.getElementById('st1').checked==1)
+            if (document.getElementById('st1').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st1').value);
-            if(document.getElementById('st2').checked==1)
+            if (document.getElementById('st2').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st2').value);
-            if(document.getElementById('st3').checked==1)
+            if (document.getElementById('st3').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st3').value);
-            if(document.getElementById('st5').checked==1)
+            if (document.getElementById('st5').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st5').value);
-            if(document.getElementById('st6').checked==1)
+            if (document.getElementById('st6').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st6').value);
-            if(document.getElementById('st7').checked==1)
+            if (document.getElementById('st7').checked == 1)
                 localStorage.setItem("sterringwheel", document.getElementById('st7').value);
 
 
-            if(document.getElementById('Ambient_lighting_cockpit+').checked==1)
+            if (document.getElementById('Ambient_lighting_cockpit+').checked == 1)
                 localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cockpit+').value);
-            if(document.getElementById('LED_Navilights').checked==1)
+            if (document.getElementById('LED_Navilights').checked == 1)
                 localStorage.setItem("LEDNavilights", document.getElementById('LED_Navilights').value);
-            if(document.getElementById('Electrical_package').checked==1)
+            if (document.getElementById('Electrical_package').checked == 1)
                 localStorage.setItem("Electricalpackage", document.getElementById('Electrical_package').value);
-            if(document.getElementById('Bathing_ladder').checked==1)
+            if (document.getElementById('Bathing_ladder').checked == 1)
                 localStorage.setItem("Bathingladder", document.getElementById('Bathing_ladder').value);
-            if(document.getElementById('Teak_Table').checked==1)
+            if (document.getElementById('Teak_Table').checked == 1)
                 localStorage.setItem("TeakTable", document.getElementById('Teak_Table').value);
-            if(document.getElementById('Bimini').checked==1)
+            if (document.getElementById('Bimini').checked == 1)
                 localStorage.setItem("Bimini", document.getElementById('Bimini').value);
-            if(document.getElementById('S_-stell_cupholder_10 pcs').checked==1)
+            if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1)
                 localStorage.setItem("Sstellcupholder10pcs", document.getElementById('S_-stell_cupholder_10 pcs').value);
-            if(document.getElementById('Hidden_cleat_4_pcs').checked==1)
+            if (document.getElementById('Hidden_cleat_4_pcs').checked == 1)
                 localStorage.setItem("Hiddencleat4pcs", document.getElementById('Hidden_cleat_4_pcs').value);
-            if(document.getElementById('Fuel_tank_43L_package').checked==1)
+            if (document.getElementById('Fuel_tank_43L_package').checked == 1)
                 localStorage.setItem("Fueltank43Lpackage", document.getElementById('Fuel_tank_43L_package').value);
-            
-            if(document.getElementById('VALORY key ring').checked==1)
+
+            if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
-            if(document.getElementById('Captain side Bag').checked==1)
+            if (document.getElementById('Captain side Bag').checked == 1)
                 localStorage.setItem("Captain side Bag", document.getElementById('Captain side Bag').value);
-            if(document.getElementById('VALORY pillow').checked==1)
+            if (document.getElementById('VALORY pillow').checked == 1)
                 localStorage.setItem("VALORY pillow", document.getElementById('VALORY pillow').value);
-            
+
 
 
 
             let person = prompt("Please enter dealership name", "");
             localStorage.setItem("CompanyName", person);
-        location.href='order.html';
-    }
+            location.href = 'order.html';
+        }
     </script>
-<div id="main">
-    <div id="left">
-        <div id="logo">
-            <div id="logoValory">
-                <img src="valory_black.svg">
+    <div id="main">
+        <div id="left">
+            <div id="logo">
+                <div id="logoValory">
+                    <img src="valory_black.svg">
+                </div>
             </div>
-        </div>
-        <div id="model">
-            <h2>Boat order form</h2><h1>Premium V 520 open</h1>
+            <div id="model">
+                <h2>Boat order form</h2>
+                <h1>Premium V 520 open</h1>
             </div>
-        <div id="image">
-            <img src="Valory_img.png">
-        </div>
-        <div id="spec">
-            <h3>Specification</h3>
-            <table>
-                <table style="width: 60%;" cellspacing="0" cellpadding="0" border="0">
-                    <tbody>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes\ValoryBoats\images\lenght.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Lenght</td>
-                    <td class="DaneDuzyOpis" width="229">5,25</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/width.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Width</td>
-                    <td class="DaneDuzyOpis" width="229">1,95</td>
-                    </tr>
-                    
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/deeping.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Deeping</td>
-                    <td class="DaneDuzyOpis" width="229">0,25</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/crew.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Crew</td>
-                    <td class="DaneDuzyOpis" width="229">6</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/power.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Max engine</td>
-                    <td class="DaneDuzyOpis" width="229">50 KM</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/engine.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Engine type</td>
-                    <td class="DaneDuzyOpis" width="229">Outboard</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/shaft.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Shaft</td>
-                    <td class="DaneDuzyOpis" width="229">L</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/weight.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Weight</td>
-                    <td class="DaneDuzyOpis" width="229">400 kg</td>
-                    </tr>
-                    <tr height="25">
-                    <td class="DaneDuzyWartosc" width="223" height="25"><img src="themes/ValoryBoats/images/category.png" alt="Premium V520 OPEN" title="Premium V520 OPEN" style="vertical-align: middle; width: 24px;margin-right: 20px;">Category</td>
-                    <td class="DaneDuzyOpis" width="229">C</td>
-                    </tr>
-                    </tbody>
+            <div id="image">
+                <img src="Valory_img.png">
+            </div>
+            <div id="spec">
+                <h3>Specification</h3>
+                <table>
+                    <table style="width: 60%;" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes\ValoryBoats\images\lenght.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Lenght</td>
+                                <td class="DaneDuzyOpis" width="229">5,25</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/width.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Width</td>
+                                <td class="DaneDuzyOpis" width="229">1,95</td>
+                            </tr>
+
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/deeping.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Deeping</td>
+                                <td class="DaneDuzyOpis" width="229">0,25</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/crew.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Crew</td>
+                                <td class="DaneDuzyOpis" width="229">6</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/power.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Max engine</td>
+                                <td class="DaneDuzyOpis" width="229">50 KM</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/engine.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Engine type</td>
+                                <td class="DaneDuzyOpis" width="229">Outboard</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/shaft.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Shaft</td>
+                                <td class="DaneDuzyOpis" width="229">L</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/weight.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Weight</td>
+                                <td class="DaneDuzyOpis" width="229">400 kg</td>
+                            </tr>
+                            <tr height="25">
+                                <td class="DaneDuzyWartosc" width="223" height="25"><img
+                                        src="themes/ValoryBoats/images/category.png" alt="Premium V520 OPEN"
+                                        title="Premium V520 OPEN"
+                                        style="vertical-align: middle; width: 24px;margin-right: 20px;">Category</td>
+                                <td class="DaneDuzyOpis" width="229">C</td>
+                            </tr>
+                        </tbody>
                     </table>
-            </table>
+                </table>
             </div>
+        </div>
+        <div id="right">
+            <div id="options">
+                <div class="equipment">
+                    <h1>Standard equipment</h1>
+                    <p>Cleat 4 pcs.</p>
+                    <p>Electric bilge pump</p>
+                    <p>Cupholder 2 pcs.</p>
+                    <p>Sternplatforms</p>
+                    <p>Stern reling</p>
+                    <p>Cushion</p>
+                    <p>Flexi teak – Bow</p>
+                </div>
+                <div class="equipment">
+                    <h1>Boat color</h1>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-003.png"><span>white (RAL 9016)</span><input
+                                    value="RAL9016" type="radio" checked id="h9016" name="hullcolor" onclick="Order()">
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-004.png"><span>light grey (RAL
+                                    7035)</span><input value="RAL7001" type="radio" id="h7001" name="hullcolor"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-005.png"><span>black (RAL 9005)</span><input
+                                    value="RAL9005" type="radio" id="h9005" name="hullcolor" onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-006.png"><span>navy blue (RAL
+                                    5004)</span><input value="RAL5004" type="radio" id="h5004" name="hullcolor"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-007.png"><span>bazalt grey (RAL
+                                    7012)</span><input value="RAL7012" type="radio" id="h7012" name="hullcolor"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div class="invi"><span>INDYWIDUAL COLOR</span><input type="radio" id="hinv"
+                                    name="hullcolor" onclick="Order()"><span
+                                    style="margin-left: 8rem;">+&euro;500,00</span><br><input value="RAL " id="hullral"
+                                    class="textinv" type="text>" </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Upholstery</h1>
+                    <h2>Standard</h2>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-015.jpg"><span>navy blue</span><input
+                                    value="Navy blue" type="radio" id="usnavy" checked name="upholsterystandard"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-016.jpg"><span>grey</span><input type="radio"
+                                    value="Grey" id="usgrey" name="upholsterystandard" onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-017.jpg"><span>beige</span><input
+                                    type="radio" value="Beige" id="usbeige" name="upholsterystandard" onclick="Order()">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Upholstery</h1>
+                    <h2>Premium</h2>
+                    <span class="equprice">+ &euro;350,00</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-021.jpg"><span>navy blue</span><input
+                                    type="radio" value="Premium Navy blue" id="upnavy" name="upholsterystandard"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-022.jpg"><span>grey</span><input type="radio"
+                                    id="upgrey" value="Premium Grey" name="upholsterystandard" onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-023.jpg"><span>beige</span><input
+                                    type="radio" id="upbeige" value="Premium Beige" name="upholsterystandard"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-024.jpg"><span>orange brown</span><input
+                                    type="radio" value="Orange Brown" id="uporange" name="upholsterystandard"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/upholsterycarbon.jpg"><span>carbon</span><input
+                                    type="radio" value="Premium carbon" id="upcarbon" name="upholsterystandard"
+                                    onclick="Order()"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Flexi Teak</h1>
+                    <h2>Bow</h2>
+                    <uL>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input
+                                    type="radio" value="Bow Brown" id="fbbrown" name="flexi" onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio"
+                                    value=" Bow Grey" id="fbgrey" name="flexi" onclick="Order()"></div>
+                        </li>
+                    </uL>
+                    <h2>Bow + cockpit</h2>
+                    <span class="equprice">+ &euro;580,00</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input
+                                    value="Bow + cockpit Dark Grey" type="radio" id="fpdarkgrey" name="flexi"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio"
+                                    value="Bow + cockpit Grey" id="fpgrey" name="flexi" onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input
+                                    type="radio" value="Bow + cockpit Brown" id="fpbrown" name="flexi"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-029.jpg"><span>light grey</span><input
+                                    type="radio" value="Bow + cockpit Light Grey" id="fplightgrey" name="flexi"
+                                    onclick="Order()"></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-030.jpg"><span>beige</span><input
+                                    type="radio" value="Bow + cockpit Beige" id="fpbeige" name="flexi"
+                                    onclick="Order()"></div>
+                        </li>
+                    </ul>
+                    <h2>Exclusive</h2>
+                    <span class="equprice">+ &euro;620,00</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input
+                                    type="radio" id="fesport" name="flexi" value="Bow + cockpit Light Grey"
+                                    onclick="Order()"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Bimini</h1>
+                    <span class="equprice">+ &euro;650</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/bimini.png"><span>bimini</span><input
+                                    type="checkbox" value="Bimini black" id="Bimini" name="bimini" onclick="Order()">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Cabrio</h1>
+                    <h2>Premium</h2>
+                    <span class="equprice">+ &euro;1100</span>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/cabrio.jpg"><span>black</span><input
+                                    type="checkbox" value="Black" id="cpblack" name="cabrio" onclick="Order()"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Steering system</h1>
+                    <ul>
+                        <li>
+                            <div><span>Steering system</span><span id="pricesteering">215,00</span><input
+                                    type="checkbox" value="Steering system" id="Steering_system" name="cabrio"
+                                    onclick="Steering(); Order()"></div>
+                        </li>
+                    </ul>
+                    <div id="steering_wheels">
+                        <h2>Standard</h2>
+                        <ul>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0311.png"><span>Standard steering wheel 1
+                                        400mm</span><input value="Standard steering wheel 1 400mm" type="radio" id="st1"
+                                        name="steering_wheels" onclick="Order()" checked></div>
+                            </li>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0312.png"><span>Standard steering wheel 2
+                                        350mm</span><input value="Standard steering wheel 2 350mm" type="radio" id="st2"
+                                        name="steering_wheels" onclick="Order()"></div>
+                            </li>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0311.png"><span>Standard steering wheel 3
+                                        400mm</span><input value="Standard steering wheel 3 400mm" type="radio" id="st3"
+                                        name="steering_wheels" onclick="Order()"></div>
+                            </li>
+                        </ul>
+                        <h2>Sport st. wheel GUSSI</h2>
+                        <ul>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0313.png"><span>Sport st. wheel GUSSI
+                                        MOLINO</span><input value="Sport st. wheel GUSSI MOLINO" type="radio" id="st5"
+                                        name="steering_wheels" onclick="Order()"><span
+                                        style="margin-left: 3rem;">+110,00</span></div>
+                            </li>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0309.png"><span>Sport st. wheel GUSSI
+                                        BRSHED</span><input value="Sport st. wheel GUSSI BRSHED" type="radio" id="st6"
+                                        name="steering_wheels" onclick="Order()"><span
+                                        style="margin-left: 3rem;">+150,00</span></div>
+                            </li>
+                            <li>
+                                <div><img src="themes/ValoryBoats/images/IMG_0308.png"><span>Sport st. wheel GUSSI
+                                        ETORE</span><input value="Sport st. wheel GUSSI ETORE" type="radio" id="st7"
+                                        name="steering_wheels" onclick="Order()"><span
+                                        style="margin-left: 3rem;">+250,00</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="equipment">
+                    <h1>VALORY accessories</h1>
+                    <ul>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-039.jpg"><span>VALORY key ring</span><input
+                                    type="checkbox" value="VALORY key ring" id="VALORY key ring" onclick="Order()"><span
+                                    style="margin-left: 3rem;">+&euro;10,00</span></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-040.jpg"><span>Captain side Bag</span><input
+                                    type="checkbox" value="Captain side Bag" id="Captain side Bag"
+                                    onclick="Order()"><span style="margin-left: 3rem;">+&euro;30,00</span></div>
+                        </li>
+                        <li>
+                            <div><img src="themes/ValoryBoats/images/image-pillow.jpg"><span>VALORY pillow</span><input
+                                    type="checkbox" value="VALORY pillow" id="VALORY pillow" onclick="Order()"><span
+                                    style="margin-left: 4rem;">+&euro;33,00</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Options</h1>
+                    <table>
+                        <table style="width: 80%;" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>Ambient lighting cockpit+ </td>
+                                    <td>250,00<input value="Ambient lighting cockpit" id="Ambient_lighting_cockpit+"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>LED Navilights</td>
+                                    <td>110,00<input value="LED Navilights" id="LED_Navilights" type="checkbox"
+                                            onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Electrical package</td>
+                                    <td>390,00<input value="Electrical package" id="Electrical_package" type="checkbox"
+                                            onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Bathing ladder</td>
+                                    <td>145,00<input value="Bathing ladder" id="Bathing_ladder" type="checkbox"
+                                            onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Teak Table</td>
+                                    <td>250,00<input value="Teak Table" id="Teak_Table" type="checkbox"
+                                            onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>S -stell cupholder 10 pcs</td>
+                                    <td>205,00<input value="S -stell cupholder 10 pcs" id="S_-stell_cupholder_10 pcs"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden cleat 4 pcs</td>
+                                    <td>420,00<input value="Hidden cleat 4 pcs" id="Hidden_cleat_4_pcs" type="checkbox"
+                                            onclick="Order()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Fuel tank 43L package</td>
+                                    <td>490,00<input value="Fuel tank 43L package" id="Fuel_tank_43L_package"
+                                            type="checkbox" onclick="Order()"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+            </div>
+            <div id="checkout">
+                <button id="back">back</button>
+                <button id="Order" name="Order" onclick="session()">Price: 5600</button>
+            </div>
+        </div>
     </div>
-    <div id="right">
-        <div id="options">
-        <div class="equipment">
-            <h1>Standard equipment</h1>
-            <p>Cleat 4 pcs.</p>
-            <p>Electric bilge pump</p>
-            <p>Cupholder 2 pcs.</p>
-            <p>Sternplatforms</p>
-            <p>Stern reling</p>
-            <p>Cushion</p>
-            <p>Flexi teak – Bow</p>
-        </div>
-        <div class="equipment">
-            <h1>Boat color</h1>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-003.png"><span>white (RAL 9016)</span><input value="RAL9016" type="radio" checked id="h9016" name="hullcolor" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-004.png"><span>light grey (RAL 7035)</span><input value="RAL7001" type="radio" id="h7001" name="hullcolor" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-005.png"><span>black (RAL 9005)</span><input value="RAL9005" type="radio" id="h9005" name="hullcolor" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-006.png"><span>navy blue (RAL 5004)</span><input value="RAL5004" type="radio" id="h5004" name="hullcolor" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-007.png"><span>bazalt grey (RAL 7012)</span><input value="RAL7012" type="radio" id="h7012" name="hullcolor" onclick="Order()"></div></li>
-                <li><div class="invi"><span>INDYWIDUAL COLOR</span><input type="radio" id="hinv" name="hullcolor" onclick="Order()"><span style="margin-left: 8rem;">+&euro;500,00</span><br><input value="RAL " id="hullral" class="textinv" type="text>"</div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Upholstery</h1>
-            <h2>Standard</h2>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-015.jpg"><span>navy blue</span><input value="Navy blue" type="radio" id="usnavy" checked name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-016.jpg"><span>grey</span><input type="radio" value="Grey" id="usgrey" name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-017.jpg"><span>beige</span><input type="radio" value="Beige" id="usbeige" name="upholsterystandard" onclick="Order()"></div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Upholstery</h1>
-            <h2>Premium</h2>
-            <span class="equprice">+ &euro;350,00</span>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-021.jpg"><span>navy blue</span><input type="radio" value="Premium Navy blue" id="upnavy" name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-022.jpg"><span>grey</span><input type="radio" id="upgrey" value="Premium Grey" name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-023.jpg"><span>beige</span><input type="radio" id="upbeige" value="Premium Beige" name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-024.jpg"><span>orange brown</span><input type="radio" value="Orange Brown" id="uporange" name="upholsterystandard" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/upholsterycarbon.jpg"><span>carbon</span><input type="radio" value="Premium carbon" id="upcarbon" name="upholsterystandard" onclick="Order()"></div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Flexi Teak</h1>
-            <h2>Bow</h2>
-            <uL>
-            <li><div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input type="radio" value="Bow Brown" id="fbbrown" name="flexi" onclick="Order()"></div></li>
-            <li><div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio" value=" Bow Grey" id="fbgrey" name="flexi" onclick="Order()"></div></li>
-             </uL>
-            <h2>Bow + cockpit</h2>
-            <span class="equprice">+ &euro;580,00</span>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input value="Bow + cockpit Dark Grey" type="radio" id="fpdarkgrey" name="flexi" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio" value="Bow + cockpit Grey" id="fpgrey" name="flexi" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input type="radio" value="Bow + cockpit Brown" id="fpbrown" name="flexi" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-029.jpg"><span>light grey</span><input type="radio" value="Bow + cockpit Light Grey" id="fplightgrey" name="flexi" onclick="Order()"></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-030.jpg"><span>beige</span><input type="radio" value="Bow + cockpit Beige" id="fpbeige" name="flexi" onclick="Order()"></div></li>
-            </ul>
-                <h2>Exclusive</h2>
-                <span class="equprice">+ &euro;620,00</span>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input type="radio" id="fesport" name="flexi" value="Bow + cockpit Light Grey" onclick="Order()"></div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Bimini</h1>
-            <span class="equprice">+ &euro;650</span>
-            <ul>
-                <li>
-                    <div><img src="themes/ValoryBoats/images/bimini.png"><span>bimini</span><input
-                            type="checkbox" value="Bimini black" id="Bimini" name="bimini" onclick="Order()"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Cabrio</h1>
-            <h2>Premium</h2>
-            <span class="equprice">+ &euro;1100</span>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/cabrio.jpg"><span>black</span><input type="checkbox" value="Black" id="cpblack" name="cabrio" onclick="Order()"></div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Steering system</h1>
-            <ul>
-                <li><div><span>Steering system</span><span id="pricesteering">215,00</span><input type="checkbox"  value="Steering system" id="Steering_system" name="cabrio" onclick="Steering(); Order()"></div></li>
-            </ul>
-            <div id="steering_wheels">
-                <h2>Standard</h2>
-                <ul><li><div><img src="themes/ValoryBoats/images/IMG_0311.png"><span>Standard steering wheel 1 400mm</span><input value="Standard steering wheel 1 400mm" type="radio" id="st1" name="steering_wheels" onclick="Order()" checked></div></li>
-                    <li><div><img src="themes/ValoryBoats/images/IMG_0312.png"><span>Standard steering wheel 2 350mm</span><input value="Standard steering wheel 2 350mm" type="radio" id="st2" name="steering_wheels" onclick="Order()"></div></li>
-                    <li><div><img src="themes/ValoryBoats/images/IMG_0311.png"><span>Standard steering wheel 3 400mm</span><input value="Standard steering wheel 3 400mm" type="radio" id="st3" name="steering_wheels" onclick="Order()"></div></li>
-                </ul>
-                <h2>Sport st. wheel GUSSI</h2>
-                <ul>
-                    <li><div><img src="themes/ValoryBoats/images/IMG_0313.png"><span>Sport st. wheel GUSSI MOLINO</span><input value="Sport st. wheel GUSSI MOLINO" type="radio" id="st5" name="steering_wheels" onclick="Order()"><span style="margin-left: 3rem;">+110,00</span></div></li>
-                    <li><div><img src="themes/ValoryBoats/images/IMG_0309.png"><span>Sport st. wheel GUSSI BRSHED</span><input value="Sport st. wheel GUSSI BRSHED" type="radio" id="st6" name="steering_wheels" onclick="Order()"><span style="margin-left: 3rem;">+150,00</span></div></li>
-                    <li><div><img src="themes/ValoryBoats/images/IMG_0308.png"><span>Sport st. wheel GUSSI ETORE</span><input value="Sport st. wheel GUSSI ETORE"  type="radio" id="st7" name="steering_wheels" onclick="Order()"><span style="margin-left: 3rem;">+250,00</span></div></li>
-                </ul>
-            </div>
-        </div>
-        <div class="equipment">
-            <h1>VALORY accessories</h1>
-            <ul>
-                <li><div><img src="themes/ValoryBoats/images/image-039.jpg"><span>VALORY key ring</span><input type="checkbox" value="VALORY key ring" id="VALORY key ring"  onclick="Order()"><span style="margin-left: 3rem;">+&euro;10,00</span></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-040.jpg"><span>Captain side Bag</span><input type="checkbox" value="Captain side Bag" id="Captain side Bag" onclick="Order()"><span style="margin-left: 3rem;">+&euro;30,00</span></div></li>
-                <li><div><img src="themes/ValoryBoats/images/image-pillow.jpg"><span>VALORY pillow</span><input type="checkbox" value="VALORY pillow" id="VALORY pillow"  onclick="Order()"><span style="margin-left: 4rem;">+&euro;33,00</span></div></li>
-            </ul>
-        </div>
-        <div class="equipment">
-            <h1>Options</h1>
-            <table>
-                <table style="width: 80%;" cellspacing="0" cellpadding="0" border="0">
-                    <tbody>
-                        <tr>
-                            <td>Ambient lighting cockpit+ </td>
-                            <td>250,00<input value="Ambient lighting cockpit" id="Ambient_lighting_cockpit+" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>LED Navilights</td>
-                            <td>110,00<input value="LED Navilights" id="LED_Navilights" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>Electrical package</td>
-                            <td>390,00<input value="Electrical package" id="Electrical_package" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>Bathing ladder</td>
-                            <td>145,00<input value="Bathing ladder" id="Bathing_ladder" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>Teak Table</td>
-                            <td>250,00<input value="Teak Table" id="Teak_Table" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>S -stell cupholder 10 pcs</td>
-                            <td>205,00<input value="S -stell cupholder 10 pcs" id="S_-stell_cupholder_10 pcs" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>Hidden cleat 4 pcs</td>
-                            <td>420,00<input value="Hidden cleat 4 pcs" id="Hidden_cleat_4_pcs" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                        <tr>
-                            <td>Fuel tank 43L package</td>
-                            <td>490,00<input value="Fuel tank 43L package" id="Fuel_tank_43L_package" type="checkbox" onclick="Order()"></td>
-                        </tr>
-                    </tbody>
-                    </table>
-        </div>
-        
-</div>
-<div id="checkout" >
-    <button id="back">back</button>
-    <button id="Order" name="Order" onclick="session()">Price: 5600</button>
-</div>
-</div>
-</div>
 
 </body>
+
 </html>
-
-
-

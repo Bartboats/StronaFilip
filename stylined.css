@@ -1,12 +1,14 @@
-#logo img{
+#logo img {
     height: 6rem;
     width: auto;
 }
-#logo{
+
+#logo {
     display: flex;
     justify-content: center;
 }
-#main{
+
+#main {
     height: 98%;
     width: 99%;
     font-weight: bold;
@@ -15,11 +17,13 @@
     position: absolute;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
-#lineselect{
+
+#lineselect {
     padding: 2rem;
     display: flex;
 }
-.option{
+
+.option {
     background-color: aliceblue;
     vertical-align: middle;
     font-size: 1rem;
@@ -32,13 +36,20 @@
     margin-right: auto;
     box-shadow: 1px 1px 1px 1px black;
 }
-#modelselect img{
-height: 7rem;
-width: auto;
-margin-left: auto;
-margin-right: auto;
+
+#modelselect {
+    margin-left: auto;
+    margin-right: auto;
 }
-#classicmodels{
+
+#modelselect img {
+    height: 7rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#classicmodels {
     margin-left: auto;
     margin-right: auto;
     display: flex;

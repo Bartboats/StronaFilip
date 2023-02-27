@@ -62,7 +62,7 @@
             if (document.getElementById('dinv').checked == 1) {
                 value = value + 250;
             }
-            if(document.getElementById('fpdarkgrey').checked == 1 || document.getElementById('fpgrey').checked == 1 || document.getElementById('fpbrown').checked == 1  || document.getElementById('fplightgrey').checked == 1  || document.getElementById('fpbeige').checked == 1 || document.getElementById('fesport').checked == 1 ){
+            if (document.getElementById('fpdarkgrey').checked == 1 || document.getElementById('fpgrey').checked == 1 || document.getElementById('fpbrown').checked == 1 || document.getElementById('fplightgrey').checked == 1 || document.getElementById('fpbeige').checked == 1 || document.getElementById('fesport').checked == 1) {
                 if (document.getElementById('fesport').checked == 1) {
                     value = value + 750;
                 }
@@ -88,7 +88,7 @@
             if (document.getElementById('HYD_Steering_system').checked == 1) {
                 value = value + 640;
             }
-            if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1 ) {
+            if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1) {
                 if (document.getElementById('st5').checked == 1) {
                     value = value + 0;
                 }
@@ -99,51 +99,51 @@
                     value = value + 350;
                 }
             }
-                if (document.getElementById('Ambient_lighting_cockpit+').checked == 1) {
-                    value = value + 200;
-                }
-                if (document.getElementById('Ambient_lighting_cabin+').checked == 1) {
-                    value = value + 200;
-                }
-                // if (document.getElementById('LED_Navilights').checked == 1) {
-                //     value = value + 110;
-                // }
-                if (document.getElementById('Electrical_package').checked == 1) {
-                    value = value + 450;
-                }
-                if (document.getElementById('Bathing_ladder').checked == 1) {
-                    value = value + 145;
-                }
-                if (document.getElementById('Teak_Table').checked == 1) {
-                    value = value + 250;
-                }
-                if (document.getElementById('Bimini').checked == 1) {
-                    value = value + 650;
-                }
-                if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1) {
-                    value = value + 205;
-                }
-                if (document.getElementById('Hiddencleat4pcs').checked == 1) {
-                    value = value + 420;
-                }
-                if (document.getElementById('Watertank / shower').checked == 1) {
-                    value = value + 350;
-                }
-                if (document.getElementById('Towing handle').checked == 1) {
-                    value = value + 90;
-                }
-                if (document.getElementById('Harbour cover').checked == 1) {
-                    value = value + 900;
-                }
-                if (document.getElementById('Windscreen railing').checked == 1) {
-                    value = value + 300;
-                }
-                if (document.getElementById('Fuel_tank_90L_package').checked == 1) {
-                    value = value + 650;
-                }
-                if (document.getElementById('ecoleather').checked == 0) {
-                    value = value + 500;
-                }
+            if (document.getElementById('Ambient_lighting_cockpit+').checked == 1) {
+                value = value + 200;
+            }
+            if (document.getElementById('Ambient_lighting_cabin+').checked == 1) {
+                value = value + 200;
+            }
+            // if (document.getElementById('LED_Navilights').checked == 1) {
+            //     value = value + 110;
+            // }
+            if (document.getElementById('Electrical_package').checked == 1) {
+                value = value + 450;
+            }
+            if (document.getElementById('Bathing_ladder').checked == 1) {
+                value = value + 145;
+            }
+            if (document.getElementById('Teak_Table').checked == 1) {
+                value = value + 250;
+            }
+            if (document.getElementById('Bimini').checked == 1) {
+                value = value + 650;
+            }
+            if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1) {
+                value = value + 205;
+            }
+            if (document.getElementById('Hiddencleat4pcs').checked == 1) {
+                value = value + 420;
+            }
+            if (document.getElementById('Watertank / shower').checked == 1) {
+                value = value + 350;
+            }
+            if (document.getElementById('Towing handle').checked == 1) {
+                value = value + 90;
+            }
+            if (document.getElementById('Harbour cover').checked == 1) {
+                value = value + 900;
+            }
+            if (document.getElementById('Windscreen railing').checked == 1) {
+                value = value + 300;
+            }
+            if (document.getElementById('Fuel_tank_90L_package').checked == 1) {
+                value = value + 650;
+            }
+            if (document.getElementById('ecoleather').checked == 0) {
+                value = value + 500;
+            }
             document.getElementById('Order').innerText = "Price: " + value;
             localStorage.setItem("Totalprice", value);
         }
@@ -177,8 +177,8 @@
             localStorage.setItem("VALORY key ring", '0');
             localStorage.setItem("Captain side Bag", '0');
             localStorage.setItem("VALORY pillow", '0');
-            localStorage.setItem("seat",'0');
-            localStorage.setItem("flexi",'none');
+            localStorage.setItem("seat", '0');
+            localStorage.setItem("flexi", 'none');
 
 
             // HULL COLOR
@@ -298,7 +298,7 @@
 
             if (document.getElementById('seatbeige').checked == 1)
                 localStorage.setItem("seat", document.getElementById('seatbeige').value);
-                
+
             if (document.getElementById('seatgrey').checked == 1)
                 localStorage.setItem("seat", document.getElementById('seatgrey').value);
 
@@ -401,7 +401,7 @@
             <div id="options">
                 <div class="equipment">
                     <p>Cleat 4 pcs.</p>
-                    <p>Electric bilge pump</p> 
+                    <p>Electric bilge pump</p>
                     <p>Cupholder 2 pcs.</p>
                     <p>Cushion</p>
                     <p>Cushion in cabine</p>
@@ -478,8 +478,8 @@
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/ecoleather.jpg"><span>White-grey</span><input
-                                    value="eco leather White-grey" type="radio" id="ecoleather" checked name="upholsterystandard"
-                                    onclick="Order()"></div>
+                                    value="eco leather White-grey" type="radio" id="ecoleather" checked
+                                    name="upholsterystandard" onclick="Order()"></div>
                         </li>
                     </ul>
                 </div>
@@ -512,8 +512,8 @@
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input
-                                    value="Floor Dark Grey" type="radio" id="fpdarkgrey" name="flexi"
-                                    onclick="Order()"></div>
+                                    value="Floor Dark Grey" type="radio" id="fpdarkgrey" name="flexi" onclick="Order()">
+                            </div>
                         </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-028.jpg"><span>grey</span><input type="radio"
@@ -521,8 +521,7 @@
                         </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input
-                                    type="radio" value="Floor Brown" id="fpbrown" name="flexi"
-                                    onclick="Order()"></div>
+                                    type="radio" value="Floor Brown" id="fpbrown" name="flexi" onclick="Order()"></div>
                         </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-029.jpg"><span>light grey</span><input
@@ -531,8 +530,7 @@
                         </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-030.jpg"><span>beige</span><input
-                                    type="radio" value="Floor Beige" id="fpbeige" name="flexi"
-                                    onclick="Order()"></div>
+                                    type="radio" value="Floor Beige" id="fpbeige" name="flexi" onclick="Order()"></div>
                         </li>
                     </ul>
                     <h2>Exclusive</h2>
@@ -540,8 +538,7 @@
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-034.jpg"><span>sport</span><input
-                                    type="radio" id="fesport" name="flexi" value="Floor Sport"
-                                    onclick="Order()"></div>
+                                    type="radio" id="fesport" name="flexi" value="Floor Sport" onclick="Order()"></div>
                         </li>
                     </ul>
                 </div>
@@ -551,11 +548,13 @@
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/seatbeige.jpg"><span>beige deluxe</span><input
-                                    type="radio" id="seatbeige" name="seat" value="Seat beige deluxe" onclick="Order()" checked></div>
+                                    type="radio" id="seatbeige" name="seat" value="Seat beige deluxe" onclick="Order()"
+                                    checked></div>
                         </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/seatgrey.jpg"><span>grey deluxe</span><input
-                                    type="radio" id="seatgrey" name="seat" value="Seat grey deluxe" onclick="Order()"></div>
+                                    type="radio" id="seatgrey" name="seat" value="Seat grey deluxe" onclick="Order()">
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -576,7 +575,8 @@
                     <ul>
                         <li>
                             <div><img src="themes/ValoryBoats/images/bimini.png"><span>bimini</span><input
-                                    type="checkbox" value="Bimini black" id="Bimini" name="bimini" onclick="Order()"></div>
+                                    type="checkbox" value="Bimini black" id="Bimini" name="bimini" onclick="Order()">
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -584,14 +584,14 @@
                     <h1>Steering system</h1>
                     <ul>
                         <li>
-                            <div><span>Steering system</span><span id="pricesteering">215,00</span><input
-                                    type="radio" value="Steering system" name="sterring" id="Steering_system"
+                            <div><span>Steering system</span><span id="pricesteering">215,00</span><input type="radio"
+                                    value="Steering system" name="sterring" id="Steering_system"
                                     onclick="Steering(); Order()"></div>
                         </li>
                         <li>
                             <div><span>Hydraulic steering system</span><span id="pricesteering">640,00</span><input
-                                    type="radio" value="Hydraulic steering system" name="sterring" id="HYD_Steering_system"
-                                    onclick="Steering(); Order()"></div>
+                                    type="radio" value="Hydraulic steering system" name="sterring"
+                                    id="HYD_Steering_system" onclick="Steering(); Order()"></div>
                         </li>
                     </ul>
                     <div id="steering_wheels">
@@ -685,23 +685,23 @@
                                 </tr>
                                 <tr>
                                     <td>Watertank / shower</td>
-                                    <td>350,00<input value="Watertank / shower" id="Watertank / shower"
-                                            type="checkbox" onclick="Order()"></td>
+                                    <td>350,00<input value="Watertank / shower" id="Watertank / shower" type="checkbox"
+                                            onclick="Order()"></td>
                                 </tr>
                                 <tr>
                                     <td>Windscreen railing</td>
-                                    <td>300,00<input value="Windscreen railing" id="Windscreen railing"
-                                            type="checkbox" onclick="Order()"></td>
+                                    <td>300,00<input value="Windscreen railing" id="Windscreen railing" type="checkbox"
+                                            onclick="Order()"></td>
                                 </tr>
                                 <tr>
                                     <td>Towing handle</td>
-                                    <td>90,00<input value="Towing handle" id="Towing handle"
-                                            type="checkbox" onclick="Order()"></td>
+                                    <td>90,00<input value="Towing handle" id="Towing handle" type="checkbox"
+                                            onclick="Order()"></td>
                                 </tr>
                                 <tr>
                                     <td>Harbour cover</td>
-                                    <td>900,00<input value="Harbour cover" id="Harbour cover"
-                                            type="checkbox" onclick="Order()"></td>
+                                    <td>900,00<input value="Harbour cover" id="Harbour cover" type="checkbox"
+                                            onclick="Order()"></td>
                                 </tr>
                             </tbody>
                         </table>

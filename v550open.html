@@ -9,7 +9,7 @@
     <title>Boat order form V550 OPEN</title>
 </head>
 
-<body onload="refresh();Order()">
+<body onload="refresh();"">
     <script>
         function refresh() {
             document.getElementById("cpblack").checked = false;
@@ -46,6 +46,7 @@
 
 
             localStorage.setItem("Totalprice", "7500");
+            return Order();
         }
         function Steering() {
             if (document.getElementById('Steering_system').checked == 1 || document.getElementById('HYD_Steering_system').checked == 1) {

@@ -9,7 +9,7 @@
     <title>Boat order form V520</title>
 </head>
 
-<body onload="refresh();Order()">
+<body onload="refresh();">
     <script>
         function refresh() {
             document.getElementById("cpblack").checked = false;
@@ -31,6 +31,7 @@
             document.getElementById("Captain side Bag").checked = false;
             document.getElementById("VALORY pillow").checked = false;
             localStorage.setItem("Totalprice", "5600");
+            return Order();
         }
         function Steering() {
             if (document.getElementById('Steering_system').checked == 1) {

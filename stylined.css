@@ -21,6 +21,7 @@
     display: flex;
 }
 .option{
+    vertical-align: middle;
     font-size: 2rem;
     width: 20rem;
     height: 10rem;

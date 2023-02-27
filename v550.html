@@ -114,8 +114,32 @@
             localStorage.setItem("Ropecolor", "(no available in this model)");
             localStorage.setItem("Baseprice", "5900");
             
+            localStorage.setItem("ambientlight", '0');
+            localStorage.setItem("ambientlightcabin", '0');
+            localStorage.setItem("LEDNavilights", '0');
+            localStorage.setItem("Electricalpackage", '0');
+            localStorage.setItem("Bathingladder", '0');
+            localStorage.setItem("TeakTable", '0');
+            localStorage.setItem("Bimini", '0');
+            localStorage.setItem("Sstellcupholder10pcs", '0');
+            localStorage.setItem("Hiddencleat4pcs", '0');
+            localStorage.setItem("Watertank / shower", '0');
+            localStorage.setItem("Towing handle", '0');
+            localStorage.setItem("Second seat", '0');
+            localStorage.setItem("Sundeck with cushion", '0');
+            localStorage.setItem("Windscreen railing", '0');
+            localStorage.setItem("Fueltank43Lpackage", '0');
+            localStorage.setItem("Fueltank75Lpackage", '0');
+            localStorage.setItem("VALORY key ring", '0');
+            localStorage.setItem("Captain side Bag", '0');
+            localStorage.setItem("VALORY pillow", '0');
+            localStorage.setItem("seat", '0');
+            localStorage.setItem("flexi", 'none');
 
-            
+            if(document.getElementById('linebeige').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('linebeige').value);
+            if(document.getElementById('lineblack').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('lineblack').value);
 
             if(document.getElementById('h9016').checked==1)
                 localStorage.setItem("hullcolor", document.getElementById('h9016').value);
@@ -186,27 +210,6 @@
                 localStorage.setItem("sterringwheel", document.getElementById('st6').value);
             if(document.getElementById('st7').checked==1)
                 localStorage.setItem("sterringwheel", document.getElementById('st7').value);
-
-                localStorage.setItem("ambientlight", '0');
-            localStorage.setItem("ambientlightcabin", '0');
-            localStorage.setItem("LEDNavilights", '0');
-            localStorage.setItem("Electricalpackage", '0');
-            localStorage.setItem("Bathingladder", '0');
-            localStorage.setItem("TeakTable", '0');
-            localStorage.setItem("Bimini", '0');
-            localStorage.setItem("Sstellcupholder10pcs", '0');
-            localStorage.setItem("Hiddencleat4pcs", '0');
-            localStorage.setItem("Watertank / shower", '0');
-            localStorage.setItem("Towing handle", '0');
-            localStorage.setItem("Second seat", '0');
-            localStorage.setItem("Sundeck with cushion", '0');
-            localStorage.setItem("Windscreen railing", '0');
-            localStorage.setItem("Fueltank43Lpackage", '0');
-            localStorage.setItem("Fueltank75Lpackage", '0');
-            localStorage.setItem("VALORY key ring", '0');
-            localStorage.setItem("Captain side Bag", '0');
-            localStorage.setItem("VALORY pillow", '0');
-            localStorage.setItem("seat",'0');
 
             if(document.getElementById('Ambient_lighting_cockpit+').checked==1)
                 localStorage.setItem("ambientlight", document.getElementById('Ambient_lighting_cockpit+').value);
@@ -370,6 +373,13 @@
             <span class="equprice">+ &euro;1100</span>
             <ul>
                 <li><div><img src="themes/ValoryBoats/images/cabrio.jpg"><span>black</span><input type="checkbox" value="Black" id="cpblack" name="cabrio" onclick="Order()"></div></li>
+            </ul>
+        </div>
+        <div class="equipment">
+            <h1>Rope</h1>
+            <ul>
+                <li><div><img src="themes/ValoryBoats/images/linebeige.jpg"><span>Beige</span><input value="Beige" type="radio" id="linebeige" name="line" onclick="Order()"></div></li>
+                <li><div><img src="themes/ValoryBoats/images/lineblack.jpg"><span>Black</span><input type="radio" value="Black" id="lineblack" name="line" onclick="Order()"></div></li>
             </ul>
         </div>
         <div class="equipment">

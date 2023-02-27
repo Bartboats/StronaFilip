@@ -120,7 +120,10 @@
             localStorage.setItem("Baseprice", "4550");
 
 
-
+            if(document.getElementById('linebeige').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('linebeige').value);
+            if(document.getElementById('lineblack').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('lineblack').value);
 
             if (document.getElementById('h9016').checked == 1)
                 localStorage.setItem("hullcolor", document.getElementById('h9016').value);
@@ -475,6 +478,13 @@
                                     type="radio" value="Bow + cockpit Beige" id="fpbeige" name="flexi"
                                     onclick="Order()"></div>
                         </li>
+                    </ul>
+                </div>
+                <div class="equipment">
+                    <h1>Rope</h1>
+                    <ul>
+                        <li><div><img src="themes/ValoryBoats/images/linebeige.jpg"><span>Beige</span><input value="Beige" type="radio" id="linebeige" name="line" onclick="Order()"></div></li>
+                        <li><div><img src="themes/ValoryBoats/images/lineblack.jpg"><span>Black</span><input type="radio" value="Black" id="lineblack" name="line" onclick="Order()"></div></li>
                     </ul>
                 </div>
                 <div class="equipment">

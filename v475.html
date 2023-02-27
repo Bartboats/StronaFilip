@@ -137,6 +137,10 @@
             localStorage.setItem("seat",'0');
             localStorage.setItem("flexi",'none');
             
+            if(document.getElementById('linebeige').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('linebeige').value);
+            if(document.getElementById('lineblack').checked==1)
+                localStorage.setItem("Ropecolor", document.getElementById('lineblack').value);
 
             if(document.getElementById('h9016').checked==1)
                 localStorage.setItem("hullcolor", document.getElementById('h9016').value);
@@ -364,6 +368,13 @@
                 <li><div><img src="themes/ValoryBoats/images/image-027.jpg"><span>brown</span><input type="radio" value="Bow + cockpit Brown" id="fpbrown" name="flexi" onclick="Order()"></div></li>
                 <li><div><img src="themes/ValoryBoats/images/image-029.jpg"><span>light grey</span><input type="radio" value="Bow + cockpit Light Grey" id="fplightgrey" name="flexi" onclick="Order()"></div></li>
                 <li><div><img src="themes/ValoryBoats/images/image-030.jpg"><span>beige</span><input type="radio" value="Bow + cockpit Beige" id="fpbeige" name="flexi" onclick="Order()"></div></li>
+            </ul>
+        </div>
+        <div class="equipment">
+            <h1>Rope</h1>
+            <ul>
+                <li><div><img src="themes/ValoryBoats/images/linebeige.jpg"><span>Beige</span><input value="Beige" type="radio" id="linebeige" name="line" onclick="Order()"></div></li>
+                <li><div><img src="themes/ValoryBoats/images/lineblack.jpg"><span>Black</span><input type="radio" value="Black" id="lineblack" name="line" onclick="Order()"></div></li>
             </ul>
         </div>
         <div class="equipment">

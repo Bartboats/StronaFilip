@@ -117,6 +117,22 @@
                 if (document.getElementById('upnavy').checked == 1) {
                     value = value + 400;
                 }
+                if (document.getElementById('fpbeige').checked == 1) {
+                    value = value + 750;
+                }
+                if (document.getElementById('fplightgrey').checked == 1) {
+                    value = value + 750;
+                }
+                if (document.getElementById('fpbrown').checked == 1) {
+                    value = value + 750;
+                }
+                if (document.getElementById('fpgrey').checked == 1) {
+                    value = value + 750;
+                }
+                if (document.getElementById('fpdarkgrey').checked == 1) {
+                    value = value + 750;
+                }
+
             document.getElementById('Order').innerText = "Price: " + value;
             localStorage.setItem("Totalprice", value);
         }

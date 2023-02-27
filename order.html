@@ -82,6 +82,13 @@
                             <p id="Flexi"></p>
                         </td>
                     </tr>
+                    <tr>
+                        <td>ROPE:
+                        </td>
+                        <td>
+                            <p id="Rope"></p>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div id="price">
@@ -198,6 +205,7 @@
         document.getElementById("Extras").innerText = localStorage.getItem("Totalprice") - localStorage.getItem("Baseprice");
         document.getElementById("Client").innerText = localStorage.getItem("CompanyName");
         document.getElementById("Flexi").innerText = localStorage.getItem("flexi");
+        document.getElementById("Rope").innerText = localStorage.getItem("Ropecolor");
         if (localStorage.getItem("cabrio") != 'None') {
             document.getElementById("tableopt").insertAdjacentHTML('beforeend', `<tr><td> Cabrio: ` + localStorage.getItem("cabrio") + `</td></tr>`);
         }

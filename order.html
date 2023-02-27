@@ -96,8 +96,10 @@
         <script>
               function printFunction() {
                 document.getElementById('button').style.display = 'none';
+                document.getElementById('terms').style.display = 'none';
                 window.print();
                 document.getElementById('button').style.display = 'block';
+                document.getElementById('terms').style.display = 'block';
               }
         </script>
             </div>
@@ -112,7 +114,7 @@
                 
             </div>
         </div>
-        <p>All prices are in euro net. 2022<br>
+        <p id="terms">All prices are in euro net. 2022<br>
             Under control of following organizations<br>
             Germanischer Lloyd AG – Hamburg<br>
             Lloyd’s Register Quality Assurance Yacht Service – Hamburg<br>

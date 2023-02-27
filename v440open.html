@@ -14,6 +14,7 @@
         function refresh() {
             document.getElementById("cpblack").checked = false;
             document.getElementById("fpbeige").checked = false;
+            document.getElementById("fpnone").checked = true;
             document.getElementById("fplightgrey").checked = false;
             document.getElementById("fpbrown").checked = false;
             document.getElementById("fpgrey").checked = false;
@@ -117,22 +118,7 @@
                 if (document.getElementById('upnavy').checked == 1) {
                     value = value + 400;
                 }
-                if (document.getElementById('fpbeige').checked == 1) {
-                    value = value + 750;
-                }
-                if (document.getElementById('fplightgrey').checked == 1) {
-                    value = value + 750;
-                }
-                if (document.getElementById('fpbrown').checked == 1) {
-                    value = value + 750;
-                }
-                if (document.getElementById('fpgrey').checked == 1) {
-                    value = value + 750;
-                }
-                if (document.getElementById('fpdarkgrey').checked == 1) {
-                    value = value + 750;
-                }
-                if (document.getElementById('fesport').checked == 1) {
+                if (document.getElementById('fpnone').checked == 0) {
                     value = value + 750;
                 }
 
@@ -475,6 +461,10 @@
                     <h2>Bow + cockpit</h2>
                     <span class="equprice">+ &euro;750,00</span>
                     <ul>
+                        <div><span>none</span><input
+                            value="none" type="radio" id="fpnone" name="flexi"
+                            onclick="Order()"></div>
+                        </li>
                         <li>
                             <div><img src="themes/ValoryBoats/images/image-026.jpg"><span>dark grey</span><input
                                     value="Bow + cockpit Dark Grey" type="radio" id="fpdarkgrey" name="flexi"

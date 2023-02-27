@@ -58,7 +58,7 @@
 }
 
 table tr {
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid black;
 }
 
 table {
@@ -79,7 +79,7 @@ table {
 }
 
 .equipment p {
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid black;
     margin-right: 15rem;
 }
 

@@ -132,6 +132,9 @@
                 if (document.getElementById('fpdarkgrey').checked == 1) {
                     value = value + 750;
                 }
+                if (document.getElementById('fesport').checked == 1) {
+                    value = value + 750;
+                }
 
             document.getElementById('Order').innerText = "Price: " + value;
             localStorage.setItem("Totalprice", value);

@@ -7,41 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valory order form</title>
     <link rel="stylesheet" href="stylined.css">
-<script>
-    function classic(){
-        document.getElementById("classicmodels").style.display="flex"
-        document.getElementById("sportmodels").style.display="none"
-        document.getElementById("premiummodels").style.display="none"
-    }
-    function sport(){
-        document.getElementById("classicmodels").style.display="none"
-        document.getElementById("sportmodels").style.display="flex"
-        document.getElementById("premiummodels").style.display="none"
-    }
-    function premium(){
-        document.getElementById("classicmodels").style.display="none"
-        document.getElementById("sportmodels").style.display="none"
-        document.getElementById("premiummodels").style.display="flex"
-    }
-</script>
 </head>
-
 <body>
     <div id="main">
         <div id="logo"><img src="valory_black.svg" alt="Valory logo"></div>
-        <div id="lineselect">
-            <div id="classic" class="option" onclick="classic()">
-                <h2>Valory <br>Classic</h2>
-            </div>
-            <div id="sport" class="option" onclick="sport()">
-                <h2>Valory <br>Sport</h2>
-            </div>
-            <div id="premium" class="option" onclick="premium()">
-                <h2>Valory <br>Premium</h2>
-            </div>
         </div>
         <div id="modelselect">
-            <div id="classicmodels" class="model">
                 <a href="https://bartboats.github.io/StronaFilip/v440.html">Valory 440 Classic<br><img
                         src="themes/ValoryBoats/images/v440classic.png"></a>
                 <a href="https://bartboats.github.io/StronaFilip/v475.html">Valory 475 Classic<br><img
@@ -52,22 +23,16 @@
                         src="themes/ValoryBoats/images/v550.jpg"></a>
                 <a href="https://bartboats.github.io/StronaFilip/v555.html">Valory 555 Classic<br><img
                         src="themes/ValoryBoats/images/V555.png"></a>
-            </div>
-            <div id="sportmodels" class="model" style="display: none;">
                 <a href="https://bartboats.github.io/StronaFilip/v440.html">Valory 440 Open<br><img
                         src="themes/ValoryBoats/images/valory440open.jpg"></a>
                 <a href="https://bartboats.github.io/StronaFilip/v550open.html">Valory 550 Open<br><img
                         src="themes/ValoryBoats/images/valory550open.jpg"></a>
                 <a href="https://bartboats.github.io/StronaFilip/v630.html">Valory 630 Open<br><img
                         src="themes/ValoryBoats/images/v630.jpeg"></a>
-            </div>
-            <div id="premiummodels" class="model" style="display: none;">
                 <a href="https://bartboats.github.io/StronaFilip/v520.html">Valory 520 Premium<br><img
                     src="Valory_img.png"></a>
                 <a href="https://bartboats.github.io/StronaFilip/v525.html">Valory 525 Premium<br><img
                     src="themes/ValoryBoats/images/V525.jpg"></a>
-            </div>
-            </script>
         </div>
     </div>
 </body>

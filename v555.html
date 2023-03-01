@@ -19,7 +19,7 @@
             document.getElementById("usnavy").checked = true;
             document.getElementById("st1").checked = true;
             document.getElementById("Steering_system").checked = false;
-            document.getElementById("Fuel_tank_75L_package").checked = false;
+            document.getElementById("Fuel_tank_43L_package").checked = false;
             document.getElementById("S_-stell_cupholder_10 pcs").checked = false;
             document.getElementById("Bimini").checked = false;
             document.getElementById("Teak_Table").checked = false;
@@ -99,8 +99,8 @@
             if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1) {
                 value = value + 205;
             }
-            if (document.getElementById('Fuel_tank_75L_package').checked == 1) {
-                value = value + 600;
+            if (document.getElementById('Fuel_tank_43L_package').checked == 1) {
+                value = value + 490;
             }
             if (document.getElementById('usnavy').checked == 0 && document.getElementById('usgrey').checked == 0 && document.getElementById('usbeige').checked == 0) {
                 value = value + 400;
@@ -232,8 +232,8 @@
                 localStorage.setItem("Bimini", document.getElementById('Bimini').value);
             if (document.getElementById('S_-stell_cupholder_10 pcs').checked == 1)
                 localStorage.setItem("Sstellcupholder10pcs", document.getElementById('S_-stell_cupholder_10 pcs').value);
-            if (document.getElementById('Fuel_tank_75L_package').checked == 1)
-                localStorage.setItem("Fueltank43Lpackage", document.getElementById('Fuel_tank_75L_package').value);
+            if (document.getElementById('Fuel_tank_43L_package').checked == 1)
+                localStorage.setItem("Fueltank43Lpackage", document.getElementById('Fuel_tank_43L_package').value);
 
             if (document.getElementById('VALORY key ring').checked == 1)
                 localStorage.setItem("VALORY key ring", document.getElementById('VALORY key ring').value);
@@ -615,7 +615,7 @@
                                 </tr>
                                 <tr>
                                     <td>Fuel tank 43L package</td>
-                                    <td>490,00<input value="Fuel tank 75L package" id="Fuel_tank_75L_package"
+                                    <td>490,00<input value="Fuel tank 43L package" id="Fuel_tank_43L_package"
                                             type="checkbox" onclick="Order()"></td>
                                 </tr>
                             </tbody>

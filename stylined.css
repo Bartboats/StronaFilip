@@ -60,3 +60,10 @@ a {
     margin-right: 1rem;
     display: flex;
 }
+td{
+    width: 7rem;
+}
+tr:nth-child(2){
+    display: flex;
+    justify-content: right;
+}

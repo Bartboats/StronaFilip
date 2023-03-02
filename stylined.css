@@ -58,8 +58,8 @@ td{
     width: 60rem;
     display: flex;
     justify-content: left;
-    padding-left: 10rem;
     border-bottom: 1px solid grey;
+    margin-left: 25%;
 }
 h2{
     font-weight: bold;

@@ -64,11 +64,16 @@ a {
 }
 td{
     width: 30rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
 }
 h2{
     font-weight: bold;
     margin: 2px;
+    text-decoration: none;
 }
 h3{
+    text-decoration: none;
     margin: 2px;
 }

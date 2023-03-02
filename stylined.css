@@ -56,6 +56,7 @@ a {
     display: flex;
 }
 td{
+    padding-right: 40rem;
     width: 60rem;
     display: flex;
     justify-content: left;
@@ -93,4 +94,8 @@ a:link {
   }
   img{
     width: 100%;
+  }
+  .LINE{
+    width: 60rem;
+    margin-top: 3px solid grey;
   }

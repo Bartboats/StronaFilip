@@ -67,4 +67,8 @@ td{
 }
 h2{
     font-weight: bold;
+    margin: 2px;
+}
+h3{
+    margin: 2px;
 }

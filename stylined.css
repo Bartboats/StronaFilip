@@ -96,5 +96,5 @@ a:link {
   }
   .LINE{
     width: 60rem;
-    margin-top: 3px solid grey;
+    border-top: 3px solid grey;
   }
